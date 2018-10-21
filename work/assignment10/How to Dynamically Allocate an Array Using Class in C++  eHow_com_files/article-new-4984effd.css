@@ -1,0 +1,1323 @@
+@font-face {
+	font-family: Museo Slab 100;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-100.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-100.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-100.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 100 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-100-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-100-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-100-italic.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 300;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-300.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-300.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-300.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 300 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-300-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-300-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-300-italic.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 500;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-500.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-500.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-500.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 500 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-500-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-500-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-500-italic.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 700;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-700.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-700.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-700.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 700 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-700-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-700-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-700-italic.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 900;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-900.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-900.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-900.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 900 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-900-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-900-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-900-italic.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 1000;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-1000.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-1000.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-1000.svg) format("svg");
+}
+@font-face {
+	font-family: Museo Slab 1000 Italic;
+	src: local("?"), url(/ui/fonts/museoslab/museo-slab-1000-italic.woff) format("woff"), url(/ui/fonts/museoslab/museo-slab-1000-italic.ttf) format("truetype"), url(/ui/fonts/museoslab/museo-slab-1000-italic.svg) format("svg");
+}
+.ShareRail {
+	list-style: none; padding: 10px 0px; border-radius: 4px; border: 1px solid rgb(194, 194, 194); top: 620px; margin-left: -10px; display: none; position: absolute; z-index: 10; background-color: rgb(255, 255, 255);
+}
+.ShareRail .item {
+	padding: 0px 10px 9px; margin-bottom: 10px; border-bottom-color: rgb(194, 194, 194); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.ShareRail :last-child.item {
+	padding: 0px 10px; margin-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none;
+}
+.ShareRail .print .url {
+	background: url("/ui/images/modules/tools/print-vertical.png") no-repeat center; height: 44px; text-indent: -999em; display: block;
+}
+.Heading1 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.Heading2 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.Heading3 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.RelatedSearches .UnorderedTitleList {
+	font-family: Georgia; font-size: 15px;
+}
+.resources .UnorderedTitleList {
+	font-family: Georgia; font-size: 15px;
+}
+.RelatedSearches .header {
+	margin-bottom: 10px; display: block;
+}
+.RelatedContentListing .header {
+	margin: 0px 0px 5px;
+}
+.RelatedContentListing li a {
+	margin: 0px; width: 100%; min-height: 70px;
+}
+.RelatedContentListing .Inline.ArticlePreview .title {
+	margin-left: 100px;
+}
+#Essentials .sliderWindow {
+	width: 370px; height: 95px;
+}
+#Essentials .sliderListing li {
+	width: 370px;
+}
+#Essentials .more {
+	margin: 5px 0px 0px; height: inherit; text-align: left; padding-right: 0px; float: none;
+}
+.Module#FeaturedContent {
+	background: rgb(34, 34, 34); width: 300px; margin-left: 0px;
+}
+#FeaturedContent .main {
+	width: 300px; height: 170px; overflow: hidden;
+}
+#FeaturedContent .main a {
+	width: 300px; height: 170px; overflow: hidden;
+}
+#FeaturedContent .main {
+	position: relative;
+}
+#FeaturedContent .main a {
+	left: 0px; top: 0px; position: absolute;
+}
+#FeaturedContent .main a:hover {
+	text-decoration: none;
+}
+#FeaturedContent .description {
+	background: rgba(0, 0, 0, 0.7); border-width: 1px 0px; border-style: solid; border-color: rgb(255, 255, 255); font: italic bold 15px/normal Georgia; padding: 7px 11px; left: 0px; width: 278px; height: 40px; bottom: 0px; color: rgb(255, 255, 255); position: absolute; font-size-adjust: none; font-stretch: normal;
+}
+#FeaturedContent ul {
+	width: 300px; height: 56px;
+}
+#FeaturedContent li {
+	list-style: none; width: 100px; height: 60px; float: left; cursor: pointer;
+}
+#FeaturedContent li.mid {
+	border-width: 0px 1px; border-style: solid; border-color: rgb(255, 255, 255); width: 98px; overflow: hidden;
+}
+.RelatedContent .PeopleReading {
+	border: 1px solid rgb(236, 236, 236); list-style-type: none;
+}
+.RelatedContent .PeopleReading .item {
+	margin: 5px; width: 48%; height: 55px; float: left;
+}
+.RelatedContent .PeopleReading .item .thumb {
+	margin-right: 5px; float: left;
+}
+.RelatedContent .item a {
+	font-family: Georgia; font-size: 14px;
+}
+.RelatedContent .HorizontalRelated .item {
+	width: 198px; float: left; display: inline;
+}
+.RelatedContent .HorizontalRelated .mid.item {
+	margin: 0px 9px;
+}
+.articleTitle {
+	margin: 0px 0px 5px; line-height: 100%; font-size: 30px; font-weight: bold;
+}
+.footer {
+	margin-bottom: 15px; position: relative;
+}
+.footer .Note {
+	font-style: italic;
+}
+.footer .Note .about {
+	color: rgb(102, 102, 102);
+}
+.pubdate {
+	color: rgb(102, 102, 102);
+}
+.byline {
+	margin: 0px 0px 10px; display: inline;
+}
+.pubdate {
+	margin: 0px 0px 10px; display: inline;
+}
+.address {
+	margin: 0px 0px 10px; display: inline;
+}
+.byline {
+	color: rgb(169, 169, 169);
+}
+.difficulty {
+	color: rgb(169, 169, 169);
+}
+#TopicViewLite .photoCredit {
+	color: rgb(169, 169, 169);
+}
+.articlePhoto {
+	overflow: hidden; position: relative;
+}
+.articlePhoto a {
+	display: block; position: relative;
+}
+.articlePhoto .caption {
+	margin-top: 2px; display: block;
+}
+.intro {
+	margin: 20px 0px 0px; text-align: justify; color: rgb(102, 102, 102); font-family: Georgia; font-size: 15px; font-style: italic;
+}
+.intro::first-letter {
+	margin: -1px 10px 2px 0px; line-height: 1; font-size: 60px; float: left;
+}
+.intro {
+	line-height: 1.5; font-family: Georgia; font-size: 15px;
+}
+.step p {
+	line-height: 1.5; font-family: Georgia; font-size: 15px;
+}
+.mainCaption {
+	padding: 5px; left: 0px; width: 100%; height: auto; bottom: -100px; color: rgb(255, 255, 255); position: absolute; background-color: rgba(0, 0, 0, 0.7);
+}
+.section {
+	list-style: none;
+}
+.nextSection {
+	border-color: rgb(169, 169, 169);
+}
+.body {
+	clear: none; margin-bottom: 0px;
+}
+.sectionTitle {
+	clear: left;
+}
+.AdWrapper {
+	position: relative;
+}
+#thingsYouNeed {
+	width: 357px; margin-bottom: 20px; float: left; background-color: rgb(255, 255, 255);
+}
+#thingsYouNeed .moreItems {
+	padding: 5px 0px; display: inline-block;
+}
+.thingsYouNeed {
+	padding: 0px 0px 20px; font-size: 14px; position: relative; background-image: none !important; background-color: rgb(255, 255, 255);
+}
+.thingsYouNeed {
+	background: rgb(255, 255, 255); padding: 20px; border: 1px solid rgb(238, 238, 238);
+}
+.thingsYouNeed .header {
+	text-align: center; padding-bottom: 10px; font-family: "Museo Slab 500"; font-size: 18px; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.thingsYouNeed .UnorderedTitleList li {
+	line-height: 22px; font-family: Georgia; font-size: 14px; border-bottom-color: rgb(220, 221, 220); border-bottom-width: 1px; border-bottom-style: solid; cursor: pointer;
+}
+.thingsYouNeed .UnorderedTitleList .title {
+	border: currentColor;
+}
+.thingsYouNeed .cbox {
+	background-position: left bottom; margin: 4px 10px 0px 0px; width: 19px; height: 22px; float: left; background-image: url("/ui/images/modules/things-needed/checkbox.png");
+}
+.thingsYouNeed .checked .title {
+	color: rgb(124, 124, 124); text-decoration: line-through;
+}
+.thingsYouNeed .checked .cbox {
+	background: url("/ui/images/modules/things-needed/checkbox-inactive.png") left bottom rgb(255, 255, 255);
+}
+.branded.thingsYouNeed .cbox {
+	display: none;
+}
+.With160.thingsYouNeed {
+	width: 185px;
+}
+.thingsYouNeed li:last-child .title {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.thingsYouNeed .UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.thingsYouNeed .brandingImage {
+	text-align: center;
+}
+.AdWrapper.no160 {
+	float: right;
+}
+.no160 #thingsYouNeed {
+	margin: 0px 0px 10px 20px; width: 227px;
+}
+#relatedContentUpper {
+	padding-top: 20px;
+}
+#relatedContent .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+#relatedArticles .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+#relatedVideos .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+.steps {
+	margin-left: 0px;
+}
+.generic {
+	margin-left: 0px;
+}
+.paginated {
+	margin-left: 0px;
+}
+.steps .stepImage {
+	min-height: 80px;
+}
+.steps .stepNumber {
+	font-family: "Museo Slab 500",serif; font-size: 28px; font-style: italic; margin-top: -3px; margin-right: 15px; float: left; min-height: 35px;
+}
+.steps .stepMeat {
+	margin-left: 35px;
+}
+.steps .step p {
+	margin: 0px 0px 10px;
+}
+.step {
+	list-style: none; padding-bottom: 10px; margin-bottom: 20px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.step .Thumbnail {
+	margin: 0px 8px 10px 0px; width: 100px; float: left; position: relative;
+}
+.ArticleStepsv2 .step .Thumbnail {
+	width: 100px;
+}
+.step .Thumbnail .caption {
+	background: rgb(255, 255, 255); display: block; word-wrap: break-word;
+}
+.step .Thumbnail:hover {
+	text-decoration: none;
+}
+.steps .sectionTitle {
+	margin-bottom: 20px;
+}
+.steps .header {
+	margin-bottom: 20px;
+}
+.googleAd {
+	list-style: none; margin-top: -5px;
+}
+.ArticleStepsv2 .googleAd {
+	margin-left: 35px;
+}
+.body .googleAd {
+	margin-top: 20px; margin-bottom: 20px;
+}
+.body .googleAd .header {
+	font-family: Georgia; font-weight: bold;
+}
+.googleAd .Ad .baseurl {
+	margin-left: 0px;
+}
+.Pagination {
+	margin-top: 4px; float: right;
+}
+.nextSection {
+	padding-bottom: 5px; margin-bottom: 10px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.generic .step {
+	border: currentColor; margin-bottom: 15px;
+}
+.tip {
+	list-style: none; padding: 10px 0px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.warning {
+	list-style: none; padding: 10px 0px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.tipsWarnings ul {
+	border-color: rgb(169, 169, 169);
+}
+.tip {
+	border-color: rgb(169, 169, 169);
+}
+.warning {
+	border-color: rgb(169, 169, 169);
+}
+.tipIcon {
+	width: 20px; height: 18px; margin-top: 12px; float: left;
+}
+.warningIcon {
+	width: 20px; height: 18px; margin-top: 12px; float: left;
+}
+.tip p {
+	margin-left: 40px;
+}
+.warning p {
+	margin-left: 40px;
+}
+.resources .sponsored {
+	height: 21px; color: rgb(102, 102, 102); line-height: 21px; font-family: Arial; font-size: 13px; float: right;
+}
+#relatedContent .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#relatedArticles .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#relatedVideos .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#AuthorProfile {
+	background: rgb(255, 255, 255); border: currentColor; color: rgb(34, 34, 34); display: none; position: absolute; z-index: 5000; zoom: 1; box-shadow: 0px 5px 5px rgba(0,0,0,0.25); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .25); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+}
+#AuthorProfile .wrapper {
+	padding: 20px; width: 400px;
+}
+#AuthorProfile .Heading3 {
+	margin-bottom: 10px;
+}
+#AuthorProfile .Heading4 {
+	margin: 15px 0px 5px; font-size: 16px;
+}
+#AuthorProfile img {
+	margin: 0px 10px 0px 0px; height: 100px; float: left;
+}
+#AuthorProfile span {
+	display: inline;
+}
+#AuthorProfile .close {
+	display: none;
+}
+#AuthorProfile li {
+	list-style: none;
+}
+.trigger {
+	cursor: pointer;
+}
+.TopicViewLite .resources {
+	margin: 0px;
+}
+.TopicViewLite .bottomFooter {
+	margin: 30px 0px;
+}
+.photoCredit {
+	margin: 30px 0px; color: rgb(169, 169, 169);
+}
+.photoCredit .UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.photoCredit .UnorderedTitleList .title {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.RCModule {
+	margin: 0px 0px 15px; clear: both;
+}
+.RelatedContentPlatform img {
+	height: 0px; font-size: 0px; display: none;
+}
+#PLATFORM_TL {
+	margin: 0px 0px 15px; padding: 15px; clear: both;
+}
+#PLATFORM_TL-h4 {
+	font: 16px/1.2 Georgia, sans-serif; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; color: rgb(35, 35, 35); vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+#PLATFORM_TL-ul {
+	list-style: none; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+#PLATFORM_TL li .vertical-a {
+	border-width: 0px 0px 1px; border-style: solid; padding: 8px 0px; display: block;
+}
+#PLATFORM_TL li:last-child .vertical-a {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#PLATFORM_CENTER {
+	margin: 0px 0px 30px; clear: both;
+}
+#PLATFORM_CENTER-h4 {
+	font: 24px/1.2 Georgia, sans-serif; margin: 0px 0px 13px; letter-spacing: -1px; font-size-adjust: none; font-stretch: normal;
+}
+#PLATFORM_CENTER-h4 span {
+	padding-bottom: 5px; border-bottom-color: rgb(250, 103, 38); border-bottom-width: 7px; border-bottom-style: solid; display: inline-block;
+}
+#PLATFORM_CENTER-ul {
+	list-style: none; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: dotted;
+}
+#PLATFORM_CENTER li .vertical-a {
+	padding: 8px 0px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.step {
+	border: 0px currentColor; padding-bottom: 0px;
+}
+.ArticleStepsv2 #GoogleAdsense336x280 {
+	margin-top: -10px; margin-left: 35px;
+}
+.ArticleGenericv2 #GoogleAdsense336x280 {
+	margin-top: -5px;
+}
+#GoogleAdsense336x280 .header {
+	font-family: Georgia; font-size: 13px;
+}
+#GoogleAdsense336x280 {
+	clear: none; margin-top: 0px;
+}
+#GoogleAdsense336x280 .baseurl {
+	font-family: Georgia; font-size: 15px;
+}
+#GoogleAdsense336x280 .copy {
+	color: rgb(51, 51, 51); font-family: Georgia; font-size: 15px;
+}
+#GoogleAd300 a.header {
+	font-family: Georgia; font-size: 13px;
+}
+#GoogleAd300 .GoogleTextAd .Ad .title {
+	line-height: 1em;
+}
+#GoogleAd300 .GoogleTextAd .Ad .baseurl {
+	margin: 0px; color: rgb(51, 51, 51); display: block;
+}
+#GoogleAd300 .GoogleTextAd .Ad p.copy {
+	margin: 5px 0px; line-height: 1.3em; font-size: 14px; white-space: normal;
+}
+.GoogleAd300x250 p.copy {
+	color: rgb(51, 51, 51); line-height: normal; font-family: Georgia; font-size: 15px;
+}
+.GoogleAd300x250 a.baseurl {
+	font-family: Georgia; font-size: 15px;
+}
+#GoogleAd300 {
+	clear: left;
+}
+.GoogleFlashAd .Ad {
+	margin: 0px;
+}
+.PopularSearches .sliderWindow {
+	width: 535px;
+}
+.PopularSearches .list .article {
+	width: 535px;
+}
+.AdUnit160 {
+	margin-left: 15px; float: right;
+}
+.ModalImage {
+	text-align: center;
+}
+.sectionTitle {
+	margin-bottom: 10px;
+}
+.Slider {
+	border: 1px solid rgb(244, 244, 244);
+}
+.ShareRail .twitter iframe {
+	width: 55px !important;
+}
+.PopularSearches .header {
+	padding-bottom: 5px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.PopularSearches .sliderWindow {
+	width: 320px; height: 120px;
+}
+.PopularSearches .list .article {
+	width: 320px; height: 120px;
+}
+#Comments .Headline {
+	margin-bottom: 10px;
+}
+#Comments .Headline .decoration {
+	padding-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.UnorderedTitleList {
+	list-style: none; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: dotted;
+}
+.UnorderedTitleList .title {
+	padding: 8px 0px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.UnorderedTitleList .ArticlePreview .title {
+	padding: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.Inline.UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.Inline.UnorderedTitleList li {
+	padding: 5px 0px; width: 33%; float: left;
+}
+.PeopleReading .item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#relatedContentLower .item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#relatedContent .TitleList li {
+	border-bottom-color: rgb(149, 149, 149); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#relatedContent .TitleList .title:hover {
+	background-color: transparent;
+}
+#Comments .Headline {
+	margin-bottom: 10px;
+}
+#Comments .Headline .decoration {
+	text-transform: capitalize; font-family: "Museo Slab 500"; font-size: 24px; font-weight: 500; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#GoogleRelatedAds ul a {
+	font-family: Georgia !important;
+}
+#relatedContent a {
+	font-family: Georgia !important;
+}
+#RelatedSearches a {
+	font-family: Georgia !important;
+}
+.resources a {
+	font-family: Georgia !important;
+}
+.PopularSearches .next {
+	background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#SsTest3 .next {
+	background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.PopularSearches .prev {
+	background-position: 0px -45px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#SsTest3 .prev {
+	background-position: 0px -45px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.tipIcon {
+	background-position: 0px -90px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.warningIcon {
+	background-position: 0px -118px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.ContentCuration .flag {
+	background-position: 0px -146px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.ShareTools .print {
+	background-position: 0px -156px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#VideoPlayer .shadow {
+	background-position: right -186px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Indeed .shadow {
+	background-position: right -186px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#SsTest5 .shadow {
+	background-position: right -219px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#AssociatedUrls .nav .next {
+	background-position: 0px -250px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+#AssociatedUrls .nav .prev {
+	background-position: 0px -314px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.SlideShow5 .left {
+	background-position: 0px -378px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.SlideShow5 .right {
+	background-position: right -433px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Helpful {
+	background-position: 0px -488px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Helpful dt {
+	background-position: 0px -886px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Helpful ul {
+	background-position: 59px -1192px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Helpful li#response {
+	background-position: 0px -1610px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Helpful span#thankyou {
+	background-position: right -1833px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.AceSendToPhone .topShadow {
+	background-position: 0px -2098px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.AceSendToPhone .phone {
+	background-position: 0px -2105px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.AceSendToPhoneModal .aceLogo {
+	background-position: 0px -2120px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.thingsYouNeed {
+	background-position: -5px bottom; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Test#FeaturedContent .mainTest .poster {
+	background-position: 0px -2410px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.Spark.SlideShow5 .logo {
+	background-position: 0px -2604px; background-image: url("/content/images/sprites/content_45051994.png"); background-repeat: no-repeat;
+}
+.SlideShow5 {
+	padding: 10px; border: 1px solid rgb(230, 230, 230); position: relative;
+}
+.SlideShow5 .dmss-op-title {
+	font: italic bold 22px/1.2 Georgia, serif; margin: 0px; font-size-adjust: none; font-stretch: normal;
+}
+.SlideShow5 .dmss-op-summary {
+	margin: 0px;
+}
+.SlideShow5 .dmss-op-summary-text {
+	display: none;
+}
+.SlideShow5 .dmss-op-img {
+	display: none;
+}
+.SlideShow5 .photo {
+	width: 278px; margin-bottom: 25px;
+}
+.SlideShow5 .left {
+	left: 0px; top: 65px; width: 30px; height: 55px; display: block; filter: alpha(opacity=80); position: absolute; opacity: 0.8; border-top-right-radius: 27px; border-bottom-right-radius: 27px; background-color: rgb(97, 97, 97); -moz-border-radius-topright: 27px; -moz-border-radius-bottomright: 27px;
+}
+.SlideShow5 .right {
+	top: 65px; width: 30px; height: 55px; right: 0px; display: block; filter: alpha(opacity=80); position: absolute; opacity: 0.8; border-top-left-radius: 27px; border-bottom-left-radius: 27px; -moz-border-radius-topleft: 27px; -moz-border-radius-bottomleft: 27px;
+}
+.SlideShow5 .banner {
+	left: -12px; top: 165px; width: 146px; height: 43px; text-align: center; color: rgb(255, 255, 255); line-height: 48px; font-family: Georgia; font-size: 14px; font-style: italic; font-weight: bold; display: block; position: absolute;
+}
+.SlideShow5 .SsTest5Opener:hover {
+	text-decoration: none;
+}
+#SsTest5 {
+	display: none;
+}
+#SsTest5 .shadow {
+	height: 15px;
+}
+.Spark.SlideShow5 .logo {
+	height: 64px; margin-bottom: 5px;
+}
+.Spark.SlideShow5 .banner {
+	top: 235px;
+}
+.Spark.SlideShow5 .right {
+	top: 150px;
+}
+.Spark.SlideShow5 .left {
+	top: 150px;
+}
+.series.SlideShow5 .dmss-op-title {
+	color: rgb(199, 0, 28); font-family: Georgia; font-size: 18px; margin-left: 7px;
+}
+.series.SlideShow5 .left {
+	display: none;
+}
+.series#SsTest5 .right {
+	display: none;
+}
+.series.SlideShow5 .photo {
+	margin-top: 5px;
+}
+.Spark.SlideShow5 .logo {
+	height: 64px; margin-bottom: 5px;
+}
+.Spark.SlideShow5 .banner {
+	top: 235px;
+}
+.Spark.SlideShow5 .right {
+	top: 150px;
+}
+.Spark.SlideShow5 .left {
+	top: 150px;
+}
+#FeaturedContentTest {
+	background: rgb(255, 255, 255); padding: 10px 22px 22px; border: 1px solid rgb(236, 236, 236); width: 254px;
+}
+#FeaturedContentTest .mainTest {
+	height: 170px;
+}
+#FeaturedContent .mainTest a {
+	height: 170px;
+}
+#FeaturedContentTest .mainTest {
+	width: 254px;
+}
+#FeaturedContentTest .mainTest {
+	height: 153px; margin-bottom: 20px; position: relative;
+}
+#FeaturedContentTest .mainTest .poster:hover {
+	text-decoration: none;
+}
+#FeaturedContentTest .title {
+	width: 164px; font-size: 15px; font-weight: normal;
+}
+#FeaturedContentTest .description {
+	padding: 7px 11px; border: currentColor; left: -11px; width: 253px; height: auto; bottom: 0px; color: rgb(255, 255, 255); position: absolute;
+}
+#FeaturedContentTest .slidesTest {
+	width: 256px; height: 255px; list-style-type: none;
+}
+#FeaturedContentTest .slidesTest a:hover .title {
+	text-decoration: underline;
+}
+#FeaturedContentTest .slidesTest a {
+	display: block;
+}
+#FeaturedContentTest .slidesTest li {
+	width: auto; height: 75px; float: none;
+}
+#FeaturedContentTest .slidesTest .mid {
+	margin: 10px 0px; padding: 10px 0px; overflow: hidden; border-top-color: rgb(169, 169, 169); border-bottom-color: rgb(169, 169, 169); border-top-width: 1px; border-bottom-width: 1px; border-top-style: dotted; border-bottom-style: dotted;
+}
+#FeaturedContentTest .slidesTest img {
+	float: left;
+}
+#FeaturedContentTest .slidesTest .title {
+	float: left;
+}
+#FeaturedContentTest .slidesTest img {
+	margin-right: 15px;
+}
+.SlideIn#FeaturedContentTest {
+	border-width: 1px 1px 1px 8px; border-style: solid; padding: 10px 10px 13px 17px; width: 280px; height: 104px; border-top-color: rgb(220, 221, 220); border-right-color: rgb(220, 221, 220); border-bottom-color: rgb(220, 221, 220); position: fixed; z-index: 2000; box-shadow: 1px 1px 10px 1px #777;
+}
+.SlideIn#FeaturedContentTest .thumb {
+	margin-right: 10px; float: left;
+}
+.SlideIn#FeaturedContentTest .Heading3 {
+	margin-bottom: 10px; border-bottom-color: darkgray; border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.Heading1 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.Heading2 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.Heading3 {
+	font-family: "Museo Slab 500",serif; font-weight: 500;
+}
+.RelatedSearches .UnorderedTitleList {
+	font-family: Georgia; font-size: 15px;
+}
+.resources .UnorderedTitleList {
+	font-family: Georgia; font-size: 15px;
+}
+.RelatedSearches .header {
+	margin-bottom: 10px; display: block;
+}
+.RelatedContentListing .header {
+	margin: 0px 0px 5px;
+}
+.RelatedContentListing li a {
+	margin: 0px; width: 100%; min-height: 70px;
+}
+.RelatedContentListing .Inline.ArticlePreview .title {
+	margin-left: 100px;
+}
+#Essentials .sliderWindow {
+	width: 370px; height: 95px;
+}
+#Essentials .sliderListing li {
+	width: 370px;
+}
+#Essentials .more {
+	margin: 5px 0px 0px; height: inherit; text-align: left; padding-right: 0px; float: none;
+}
+.Module#FeaturedContent {
+	background: rgb(34, 34, 34); width: 300px; margin-left: 0px;
+}
+#FeaturedContent .main {
+	width: 300px; height: 170px; overflow: hidden;
+}
+#FeaturedContent .main a {
+	width: 300px; height: 170px; overflow: hidden;
+}
+#FeaturedContent .main {
+	position: relative;
+}
+#FeaturedContent .main a {
+	left: 0px; top: 0px; position: absolute;
+}
+#FeaturedContent .main a:hover {
+	text-decoration: none;
+}
+#FeaturedContent .description {
+	background: rgba(0, 0, 0, 0.7); border-width: 1px 0px; border-style: solid; border-color: rgb(255, 255, 255); font: italic bold 15px/normal Georgia; padding: 7px 11px; left: 0px; width: 278px; height: 40px; bottom: 0px; color: rgb(255, 255, 255); position: absolute; font-size-adjust: none; font-stretch: normal;
+}
+#FeaturedContent ul {
+	width: 300px; height: 56px;
+}
+#FeaturedContent li {
+	list-style: none; width: 100px; height: 60px; float: left; cursor: pointer;
+}
+#FeaturedContent li.mid {
+	border-width: 0px 1px; border-style: solid; border-color: rgb(255, 255, 255); width: 98px; overflow: hidden;
+}
+.RelatedContent .PeopleReading {
+	border: 1px solid rgb(236, 236, 236); list-style-type: none;
+}
+.RelatedContent .PeopleReading .item {
+	margin: 5px; width: 48%; height: 55px; float: left;
+}
+.RelatedContent .PeopleReading .item .thumb {
+	margin-right: 5px; float: left;
+}
+.RelatedContent .item a {
+	font-family: Georgia; font-size: 14px;
+}
+.RelatedContent .HorizontalRelated .item {
+	width: 198px; float: left; display: inline;
+}
+.RelatedContent .HorizontalRelated .mid.item {
+	margin: 0px 9px;
+}
+.articleTitle {
+	margin: 0px 0px 5px; line-height: 100%; font-size: 30px; font-weight: bold;
+}
+.footer {
+	margin-bottom: 15px; position: relative;
+}
+.footer .Note {
+	font-style: italic;
+}
+.footer .Note .about {
+	color: rgb(102, 102, 102);
+}
+.pubdate {
+	color: rgb(102, 102, 102);
+}
+.byline {
+	margin: 0px 0px 10px; display: inline;
+}
+.pubdate {
+	margin: 0px 0px 10px; display: inline;
+}
+.address {
+	margin: 0px 0px 10px; display: inline;
+}
+.byline {
+	color: rgb(169, 169, 169);
+}
+.difficulty {
+	color: rgb(169, 169, 169);
+}
+#TopicViewLite .photoCredit {
+	color: rgb(169, 169, 169);
+}
+.articlePhoto {
+	overflow: hidden; position: relative;
+}
+.articlePhoto a {
+	display: block; position: relative;
+}
+.articlePhoto .caption {
+	margin-top: 2px; display: block;
+}
+.intro {
+	margin: 20px 0px 0px; text-align: justify; color: rgb(102, 102, 102); font-family: Georgia; font-size: 15px; font-style: italic;
+}
+.intro::first-letter {
+	margin: -1px 10px 2px 0px; line-height: 1; font-size: 60px; float: left;
+}
+.intro {
+	line-height: 1.5; font-family: Georgia; font-size: 15px;
+}
+.step p {
+	line-height: 1.5; font-family: Georgia; font-size: 15px;
+}
+.mainCaption {
+	padding: 5px; left: 0px; width: 100%; height: auto; bottom: -100px; color: rgb(255, 255, 255); position: absolute; background-color: rgba(0, 0, 0, 0.7);
+}
+.section {
+	list-style: none;
+}
+.nextSection {
+	border-color: rgb(169, 169, 169);
+}
+.body {
+	clear: none; margin-bottom: 0px;
+}
+.sectionTitle {
+	clear: left;
+}
+.AdWrapper {
+	position: relative;
+}
+#thingsYouNeed {
+	width: 357px; margin-bottom: 20px; float: left; background-color: rgb(255, 255, 255);
+}
+#thingsYouNeed .moreItems {
+	padding: 5px 0px; display: inline-block;
+}
+.thingsYouNeed {
+	padding: 0px 0px 20px; font-size: 14px; position: relative; background-image: none !important; background-color: rgb(255, 255, 255);
+}
+.thingsYouNeed {
+	background: rgb(255, 255, 255); padding: 20px; border: 1px solid rgb(238, 238, 238);
+}
+.thingsYouNeed .header {
+	text-align: center; padding-bottom: 10px; font-family: "Museo Slab 500"; font-size: 18px; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.thingsYouNeed .UnorderedTitleList li {
+	line-height: 22px; font-family: Georgia; font-size: 14px; border-bottom-color: rgb(220, 221, 220); border-bottom-width: 1px; border-bottom-style: solid; cursor: pointer;
+}
+.thingsYouNeed .UnorderedTitleList .title {
+	border: currentColor;
+}
+.thingsYouNeed .cbox {
+	background-position: left bottom; margin: 4px 10px 0px 0px; width: 19px; height: 22px; float: left; background-image: url("/ui/images/modules/things-needed/checkbox.png");
+}
+.thingsYouNeed .checked .title {
+	color: rgb(124, 124, 124); text-decoration: line-through;
+}
+.thingsYouNeed .checked .cbox {
+	background: url("/ui/images/modules/things-needed/checkbox-inactive.png") left bottom rgb(255, 255, 255);
+}
+.branded.thingsYouNeed .cbox {
+	display: none;
+}
+.With160.thingsYouNeed {
+	width: 185px;
+}
+.thingsYouNeed li:last-child .title {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.thingsYouNeed .UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.thingsYouNeed .brandingImage {
+	text-align: center;
+}
+.AdWrapper.no160 {
+	float: right;
+}
+.no160 #thingsYouNeed {
+	margin: 0px 0px 10px 20px; width: 227px;
+}
+#relatedContentUpper {
+	padding-top: 20px;
+}
+#relatedContent .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+#relatedArticles .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+#relatedVideos .ArticlePreview .title {
+	font-size: 15px; font-weight: normal;
+}
+.steps {
+	margin-left: 0px;
+}
+.generic {
+	margin-left: 0px;
+}
+.paginated {
+	margin-left: 0px;
+}
+.steps .stepImage {
+	min-height: 80px;
+}
+.steps .stepNumber {
+	font-family: "Museo Slab 500",serif; font-size: 28px; font-style: italic; margin-top: -3px; margin-right: 15px; float: left; min-height: 35px;
+}
+.steps .stepMeat {
+	margin-left: 35px;
+}
+.steps .step p {
+	margin: 0px 0px 10px;
+}
+.step {
+	list-style: none; padding-bottom: 10px; margin-bottom: 20px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.step .Thumbnail {
+	margin: 0px 8px 10px 0px; width: 100px; float: left; position: relative;
+}
+.ArticleStepsv2 .step .Thumbnail {
+	width: 100px;
+}
+.step .Thumbnail .caption {
+	background: rgb(255, 255, 255); display: block; word-wrap: break-word;
+}
+.step .Thumbnail:hover {
+	text-decoration: none;
+}
+.steps .sectionTitle {
+	margin-bottom: 20px;
+}
+.steps .header {
+	margin-bottom: 20px;
+}
+.googleAd {
+	list-style: none; margin-top: -5px;
+}
+.ArticleStepsv2 .googleAd {
+	margin-left: 35px;
+}
+.body .googleAd {
+	margin-top: 20px; margin-bottom: 20px;
+}
+.body .googleAd .header {
+	font-family: Georgia; font-weight: bold;
+}
+.googleAd .Ad .baseurl {
+	margin-left: 0px;
+}
+.Pagination {
+	margin-top: 4px; float: right;
+}
+.nextSection {
+	padding-bottom: 5px; margin-bottom: 10px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.generic .step {
+	border: currentColor; margin-bottom: 15px;
+}
+.tip {
+	list-style: none; padding: 10px 0px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.warning {
+	list-style: none; padding: 10px 0px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.tipsWarnings ul {
+	border-color: rgb(169, 169, 169);
+}
+.tip {
+	border-color: rgb(169, 169, 169);
+}
+.warning {
+	border-color: rgb(169, 169, 169);
+}
+.tipIcon {
+	width: 20px; height: 18px; margin-top: 12px; float: left;
+}
+.warningIcon {
+	width: 20px; height: 18px; margin-top: 12px; float: left;
+}
+.tip p {
+	margin-left: 40px;
+}
+.warning p {
+	margin-left: 40px;
+}
+.resources .sponsored {
+	height: 21px; color: rgb(102, 102, 102); line-height: 21px; font-family: Arial; font-size: 13px; float: right;
+}
+#relatedContent .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#relatedArticles .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#relatedVideos .UnorderedTitleList li .ArticlePreview a:hover {
+	text-decoration: underline; background-color: transparent;
+}
+#AuthorProfile {
+	background: rgb(255, 255, 255); border: currentColor; color: rgb(34, 34, 34); display: none; position: absolute; z-index: 5000; zoom: 1; box-shadow: 0px 5px 5px rgba(0,0,0,0.25); -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .25); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+}
+#AuthorProfile .wrapper {
+	padding: 20px; width: 400px;
+}
+#AuthorProfile .Heading3 {
+	margin-bottom: 10px;
+}
+#AuthorProfile .Heading4 {
+	margin: 15px 0px 5px; font-size: 16px;
+}
+#AuthorProfile img {
+	margin: 0px 10px 0px 0px; height: 100px; float: left;
+}
+#AuthorProfile span {
+	display: inline;
+}
+#AuthorProfile .close {
+	display: none;
+}
+#AuthorProfile li {
+	list-style: none;
+}
+.trigger {
+	cursor: pointer;
+}
+.TopicViewLite .resources {
+	margin: 0px;
+}
+.TopicViewLite .bottomFooter {
+	margin: 30px 0px;
+}
+.photoCredit {
+	margin: 30px 0px; color: rgb(169, 169, 169);
+}
+.photoCredit .UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.photoCredit .UnorderedTitleList .title {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.RCModule {
+	margin: 0px 0px 15px; clear: both;
+}
+.RelatedContentPlatform img {
+	height: 0px; font-size: 0px; display: none;
+}
+#PLATFORM_TL {
+	margin: 0px 0px 15px; padding: 15px; clear: both;
+}
+#PLATFORM_TL-h4 {
+	font: 16px/1.2 Georgia, sans-serif; margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; color: rgb(35, 35, 35); vertical-align: baseline; font-size-adjust: none; font-stretch: normal;
+}
+#PLATFORM_TL-ul {
+	list-style: none; border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+#PLATFORM_TL li .vertical-a {
+	border-width: 0px 0px 1px; border-style: solid; padding: 8px 0px; display: block;
+}
+#PLATFORM_TL li:last-child .vertical-a {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#PLATFORM_CENTER {
+	margin: 0px 0px 30px; clear: both;
+}
+#PLATFORM_CENTER-h4 {
+	font: 24px/1.2 Georgia, sans-serif; margin: 0px 0px 13px; letter-spacing: -1px; font-size-adjust: none; font-stretch: normal;
+}
+#PLATFORM_CENTER-h4 span {
+	padding-bottom: 5px; border-bottom-color: rgb(250, 103, 38); border-bottom-width: 7px; border-bottom-style: solid; display: inline-block;
+}
+#PLATFORM_CENTER-ul {
+	list-style: none; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: dotted;
+}
+#PLATFORM_CENTER li .vertical-a {
+	padding: 8px 0px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.step {
+	border: 0px currentColor; padding-bottom: 0px;
+}
+.ArticleStepsv2 #GoogleAdsense336x280 {
+	margin-top: -10px; margin-left: 35px;
+}
+.ArticleGenericv2 #GoogleAdsense336x280 {
+	margin-top: -5px;
+}
+#GoogleAdsense336x280 .header {
+	font-family: Georgia; font-size: 13px;
+}
+#GoogleAdsense336x280 {
+	clear: none; margin-top: 0px;
+}
+#GoogleAdsense336x280 .baseurl {
+	font-family: Georgia; font-size: 15px;
+}
+#GoogleAdsense336x280 .copy {
+	color: rgb(51, 51, 51); font-family: Georgia; font-size: 15px;
+}
+#GoogleAd300 a.header {
+	font-family: Georgia; font-size: 13px;
+}
+#GoogleAd300 .GoogleTextAd .Ad .title {
+	line-height: 1em;
+}
+#GoogleAd300 .GoogleTextAd .Ad .baseurl {
+	margin: 0px; color: rgb(51, 51, 51); display: block;
+}
+#GoogleAd300 .GoogleTextAd .Ad p.copy {
+	margin: 5px 0px; line-height: 1.3em; font-size: 14px; white-space: normal;
+}
+.GoogleAd300x250 p.copy {
+	color: rgb(51, 51, 51); line-height: normal; font-family: Georgia; font-size: 15px;
+}
+.GoogleAd300x250 a.baseurl {
+	font-family: Georgia; font-size: 15px;
+}
+#GoogleAd300 {
+	clear: left;
+}
+.GoogleFlashAd .Ad {
+	margin: 0px;
+}
+.PopularSearches .sliderWindow {
+	width: 535px;
+}
+.PopularSearches .list .article {
+	width: 535px;
+}
+.AdUnit160 {
+	margin-left: 15px; float: right;
+}
+.ModalImage {
+	text-align: center;
+}
+.sectionTitle {
+	margin-bottom: 10px;
+}
+.Slider {
+	border: 1px solid rgb(244, 244, 244);
+}
+.ShareRail .twitter iframe {
+	width: 55px !important;
+}
+.PopularSearches .header {
+	padding-bottom: 5px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.PopularSearches .sliderWindow {
+	width: 320px; height: 120px;
+}
+.PopularSearches .list .article {
+	width: 320px; height: 120px;
+}
+#Comments .Headline {
+	margin-bottom: 10px;
+}
+#Comments .Headline .decoration {
+	padding-bottom: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.UnorderedTitleList {
+	list-style: none; border-top-color: rgb(169, 169, 169); border-top-width: 1px; border-top-style: dotted;
+}
+.UnorderedTitleList .title {
+	padding: 8px 0px; border-bottom-color: rgb(169, 169, 169); border-bottom-width: 1px; border-bottom-style: dotted; display: block;
+}
+.UnorderedTitleList .ArticlePreview .title {
+	padding: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.Inline.UnorderedTitleList {
+	border-top-color: currentColor; border-top-width: medium; border-top-style: none;
+}
+.Inline.UnorderedTitleList li {
+	padding: 5px 0px; width: 33%; float: left;
+}
+.PeopleReading .item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#relatedContentLower .item {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#relatedContent .TitleList li {
+	border-bottom-color: rgb(149, 149, 149); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#relatedContent .TitleList .title:hover {
+	background-color: transparent;
+}
+#Comments .Headline {
+	margin-bottom: 10px;
+}
+#Comments .Headline .decoration {
+	text-transform: capitalize; font-family: "Museo Slab 500"; font-size: 24px; font-weight: 500; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#GoogleRelatedAds ul a {
+	font-family: Georgia !important;
+}
+#relatedContent a {
+	font-family: Georgia !important;
+}
+#RelatedSearches a {
+	font-family: Georgia !important;
+}
+.resources a {
+	font-family: Georgia !important;
+}

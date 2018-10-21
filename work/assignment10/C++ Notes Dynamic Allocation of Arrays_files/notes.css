@@ -1,0 +1,108 @@
+body {
+	width: 800px; font-family: Verdana,Sans-serif; font-size: 90%;
+}
+td {
+	font-family: Verdana,Sans-serif;
+}
+th {
+	font-family: Verdana,Sans-serif;
+}
+dt {
+	font-weight: bold;
+}
+h1 {
+	font-family: "Trebuchet MS" , "Lucida Grande" , Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif; font-size: 150%; font-weight: normal; margin-left: 1px; border-bottom-color: currentColor; border-bottom-width: thin; border-bottom-style: solid;
+}
+h2 {
+	border-width: 0px 0px 1px; border-style: solid; border-color: rgb(102, 0, 0); margin: 2em 1px 1px; padding: 0.2em 0.2em 0.2em 0px; color: rgb(102, 0, 0); font-size: 110%; font-weight: bold;
+}
+h3 {
+	color: rgb(0, 85, 85); padding-top: 0px; padding-bottom: 0px; font-size: 100%; font-weight: bold; margin-top: 0.75em; margin-bottom: 0px;
+}
+p {
+	margin-top: 0.5em; margin-bottom: 0.5em;
+}
+li {
+	margin-top: 0.5em;
+}
+h4 {
+	padding-top: 1em; font-family: sans-serif;
+}
+h5 {
+	padding-top: 1em; font-family: sans-serif;
+}
+h6 {
+	padding-top: 1em; font-family: sans-serif;
+}
+pre {
+	font-family: monospace; margin-top: 0px; margin-bottom: 0px;
+}
+.code {
+	font-family: monospace;
+}
+strong.color {
+	color: blue;
+}
+.hylyt {
+	font-weight: bold; background-color: yellow;
+}
+.hilite {
+	font-weight: bold; background-color: yellow;
+}
+.hilite-g {
+	font-weight: bold; background-color: rgb(170, 255, 170);
+}
+.hilite-b {
+	font-weight: bold; background-color: rgb(170, 170, 255);
+}
+em {
+	font-style: italic; font-weight: bold;
+}
+ul {
+	margin-top: 0px; margin-bottom: 0px;
+}
+ol {
+	margin-top: 0px; margin-bottom: 0px;
+}
+dl {
+	margin-top: 0px; margin-bottom: 0px;
+}
+li.sec {
+	margin-top: 0.5em;
+}
+.answerspace {
+	
+}
+.answer {
+	display: none;
+}
+.compact {
+	margin-top: 0px;
+}
+.file {
+	border-width: thin medium medium thin; border-style: solid; border-color: currentColor; padding: 4px; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em; background-color: rgb(255, 255, 221);
+}
+.example {
+	padding: 4px; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em; border-left-color: currentColor; border-left-width: thin; border-left-style: solid; background-color: rgb(255, 255, 221);
+}
+.fragment {
+	padding: 4px; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 1em; border-left-color: currentColor; border-left-width: thin; border-left-style: solid; background-color: rgb(255, 255, 221);
+}
+.example2 {
+	padding: 4px; margin-top: 0.5em; margin-bottom: 0.5em; margin-left: 0px;
+}
+.footer {
+	font-size: 70%; font-style: italic; margin-top: 0.8em; border-top-color: currentColor; border-top-width: thin; border-top-style: solid;
+}
+.solidbox {
+	border: thin solid currentColor;
+}
+.rowheader {
+	font-style: italic; background-color: rgb(192, 192, 192);
+}
+.question {
+	margin-top: 1em; page-break-inside: avoid;
+}
+.mc {
+	list-style-type: lower-alpha;
+}

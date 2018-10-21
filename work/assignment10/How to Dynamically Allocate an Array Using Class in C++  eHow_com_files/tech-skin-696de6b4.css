@@ -1,0 +1,739 @@
+@font-face {
+	font-family: League Gothic;
+	src: url(/ui/fonts/leaguegothic/league-gothic.eot?#iefix) format("embedded-opentype"), url(/ui/fonts/leaguegothic/league-gothic.woff) format("woff"), url(/ui/fonts/leaguegothic/league-gothic.ttf) format("truetype"), url(/ui/fonts/leaguegothic/league-gothic.svg#LeagueGothic) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Orbitron;
+	src: url(/ui/fonts/orbitron/orbitron-regular-webfont.eot?#iefix) format("embedded-opentype"), url(/ui/fonts/orbitron/orbitron-regular-webfont.woff) format("woff"), url(/ui/fonts/orbitron/orbitron-regular-webfont.ttf) format("truetype"), url(/ui/fonts/orbitron/orbitron-regular-webfont.svg#OrbitronRegular) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: Orbitron;
+	src: url(/ui/fonts/orbitron/orbitron-medium-webfont.eot?#iefix) format("embedded-opentype"), url(/ui/fonts/orbitron/orbitron-medium-webfont.woff) format("woff"), url(/ui/fonts/orbitron/orbitron-medium-webfont.ttf) format("truetype"), url(/ui/fonts/orbitron/orbitron-medium-webfont.svg#OrbitronMedium) format("svg");
+}
+@font-face {
+	font-family: Orbitron;
+	src: url(/ui/fonts/orbitron/orbitron-bold-webfont.eot?#iefix) format("embedded-opentype"), url(/ui/fonts/orbitron/orbitron-bold-webfont.woff) format("woff"), url(/ui/fonts/orbitron/orbitron-bold-webfont.ttf) format("truetype"), url(/ui/fonts/orbitron/orbitron-bold-webfont.svg#OrbitronBold) format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+#Header {
+	background-position: right top; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+#Header .Logo {
+	background-position: left -90px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+#Header .Logo .channel {
+	background-position: left -220px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.Dropdown .title {
+	background-position: right -320px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.Dropdown .title:hover {
+	background-position: right -320px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+#secondaryNav .huvr {
+	background-position: 0px -356px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+#secondaryNav .label {
+	background-position: right -406px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.FeaturedContent .videoIcon {
+	background-position: 0px -445px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.Results .item .video {
+	background-position: 0px -445px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.TitleList .video {
+	background-position: 0px -498px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.TopContent .video {
+	background-position: 0px -561px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.TopContent .video {
+	background-position: 0px -612px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.TitleList .slideshow {
+	background-position: 0px -643px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.ContentPreview .play {
+	background-position: 0px -687px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.SlideShow5 .banner {
+	background-position: 0px -754px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+#Tombstone .ribbon {
+	background-position: 0px -817px; background-image: url("/content/images/sprites/tech_a4f8ae71.png"); background-repeat: no-repeat;
+}
+.TopContent .item {
+	-webkit-transition: background-color .5s ease-in-out; -moz-transition: background-color .5s ease-in-out; -o-transition: background-color .5s ease-in-out; -ms-transition: background-color .5s ease-in-out; transition: background-color .5s ease-in-out;
+}
+.TopContent .item:hover {
+	background-color: rgba(228, 244, 255, 1);
+}
+html {
+	color: rgb(35, 35, 35);
+}
+body {
+	color: rgb(35, 35, 35); font-family: Arial,Helvetica,sans-serif; font-size: small;
+}
+::selection {
+	color: rgb(255, 255, 255); background-color: rgb(10, 91, 147); text-shadow: 0 -1px 1px rgba(0, 0, 0, .5);
+}
+h1 {
+	font-weight: normal;
+}
+h2 {
+	font-weight: normal;
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-weight: normal;
+}
+h5 {
+	font-weight: normal;
+}
+h6 {
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 10px 0px; line-height: 1.4;
+}
+.Heading1 {
+	font-family: Georgia;
+}
+.Heading2 {
+	font-family: Georgia;
+}
+.Heading3 {
+	font-family: Georgia;
+}
+.Heading4 {
+	font-family: Georgia;
+}
+.Heading5 {
+	font-family: Georgia;
+}
+.Heading6 {
+	font-family: Georgia;
+}
+.Heading1 {
+	font-size: 30px;
+}
+.Heading2 {
+	font-size: 24px;
+}
+.Heading3 {
+	font-size: 21px;
+}
+.Heading4 {
+	font-size: 18px;
+}
+.Heading5 {
+	font-size: 16px;
+}
+.Heading6 {
+	font-size: 14px;
+}
+.Note {
+	color: rgb(169, 169, 169); font-size: 12px;
+}
+.Heading1 {
+	letter-spacing: -1px;
+}
+.Heading2 {
+	letter-spacing: -1px;
+}
+.Headline {
+	margin-bottom: 10px;
+}
+.Headline .decoration {
+	text-transform: uppercase; letter-spacing: inherit; font-family: "League Gothic"; font-size: 30px; display: block;
+}
+.TechBlogLanding .PageHeader {
+	background: url("/ui/images/skins/tech/blog-header.jpg") repeat-x left top; padding: 0px 10px; height: 65px; color: rgb(255, 255, 255); line-height: 65px;
+}
+.TechBlogPost .PageHeader {
+	background: url("/ui/images/skins/tech/blog-header.jpg") repeat-x left top; padding: 0px 10px; height: 65px; color: rgb(255, 255, 255); line-height: 65px;
+}
+.Group .PageHeader {
+	background: url("/ui/images/skins/tech/blog-header.jpg") repeat-x left top; padding: 0px 10px; height: 65px; color: rgb(255, 255, 255); line-height: 65px;
+}
+.Experts .PageHeader {
+	background: url("/ui/images/skins/tech/blog-header.jpg") repeat-x left top; padding: 0px 10px; height: 65px; color: rgb(255, 255, 255); line-height: 65px;
+}
+.TechBlogLanding .PageHeader .heading {
+	font-family: Orbitron;
+}
+.TechBlogPost .PageHeader .heading {
+	font-family: Orbitron;
+}
+.Group .PageHeader .heading {
+	font-family: Orbitron;
+}
+.Experts .PageHeader .heading {
+	font-family: Orbitron;
+}
+.Thumbnail:hover {
+	text-decoration: none;
+}
+.Thumbnail:hover .title {
+	text-decoration: underline;
+}
+.TitleList {
+	border-width: 0px 0px 1px; border-style: dotted; border-color: rgb(169, 169, 169);
+}
+.TitleList .item {
+	border-width: 0px 0px 1px; border-style: dotted; border-color: rgb(169, 169, 169);
+}
+.TitleList {
+	border-width: 1px 0px 0px; list-style: none;
+}
+.TitleList .title {
+	padding: 9px 0px; display: block; -webkit-transition: background-color .5s ease-in-out; -moz-transition: background-color .5s ease-in-out; -o-transition: background-color .5s ease-in-out; -ms-transition: background-color .5s ease-in-out; transition: background-color .5s ease-in-out;
+}
+.TitleList .title:hover {
+	background-color: rgba(228, 244, 255, 1);
+}
+.TitleList .video {
+	padding: 9px 0px; text-indent: 22px;
+}
+.TitleList .slideshow {
+	padding: 9px 0px; text-indent: 22px;
+}
+.ContentPreview {
+	position: relative;
+}
+.ContentPreview .title {
+	color: rgb(0, 0, 0); margin-top: 5px; margin-bottom: 5px; display: block; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;
+}
+.ContentPreview .Thumbnail:hover .title {
+	color: rgb(10, 91, 147);
+}
+.ContentPreview .play {
+	padding: 5px; border-radius: 25px; border: 2px solid rgb(255, 255, 255); left: 10px; top: 150px; width: 25px; height: 25px; color: rgb(255, 255, 255); text-indent: -999em; position: absolute; background-color: rgba(0, 0, 0, 0.6); -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; -o-transition: all .2s ease-in-out; -ms-transition: all .2s ease-in-out; transition: all .2s ease-in-out;
+}
+.ContentPreview .Thumbnail:hover .play {
+	background-color: rgba(0, 0, 0, 1);
+}
+.ContentPreview .excerpt {
+	line-height: 1.4;
+}
+.ContentListing {
+	padding-top: 10px; margin-bottom: 20px; border-top-color: rgb(194, 194, 194); border-top-width: 1px; border-top-style: dotted;
+}
+.ContentListing .item {
+	list-style: none; padding-bottom: 10px; margin-bottom: 10px; border-bottom-color: rgb(194, 194, 194); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.ContentListing .excerpt {
+	line-height: 1.4;
+}
+.RelatedContent {
+	margin-bottom: 20px;
+}
+.RelatedContent .heading {
+	margin-bottom: 10px;
+}
+.RelatedContent .listing {
+	border-top-color: rgb(194, 194, 194); border-top-width: 1px; border-top-style: dotted;
+}
+.RelatedContent .item {
+	list-style: none; padding: 9px 0px; border-bottom-color: rgb(194, 194, 194); border-bottom-width: 1px; border-bottom-style: dotted; min-height: 60px;
+}
+.TooltipContainer {
+	padding: 5px; border-radius: 3px; color: rgb(255, 255, 255); display: none; position: absolute; z-index: 100; box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.5); background-color: rgb(10, 91, 147); text-shadow: 0 1px 1px #000;
+}
+.TooltipContainer::after {
+	left: 15px; width: 10px; height: 10px; bottom: -4px; position: absolute; z-index: 1950; content: ""; background-color: rgb(10, 91, 147); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg);
+}
+.ModalOverlay {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: fixed; z-index: 9999991; background-color: rgb(0, 0, 0);
+}
+.ModalContainer {
+	margin: 0px auto; padding: 5px; border-radius: 4px; left: 0px; top: 150px; right: 0px; position: fixed; z-index: 9999992; box-shadow: 0px 0px 50px rgba(0,0,0,0.75); background-color: rgb(255, 255, 255);
+}
+.ModalContainer .contents {
+	padding: 11px; border-radius: 3px; border: 1px solid rgb(201, 201, 201);
+}
+.ModalContent {
+	color: rgb(169, 169, 169); margin-top: 5px;
+}
+.ModalClose {
+	top: -18px; width: 37px; height: 37px; text-align: center; right: -18px; line-height: 37px; display: block; position: absolute;
+}
+.ModalClose:hover {
+	text-decoration: none;
+}
+#Tombstone .heading {
+	margin: 0px 0px 20px; color: rgb(10, 91, 147);
+}
+#Tombstone .ribbon {
+	left: -11px; top: 90px; width: 146px; height: 43px; text-align: center; color: rgb(255, 255, 255); line-height: 48px; font-style: italic; font-weight: bold; display: block; position: absolute;
+}
+#Tombstone #others {
+	margin-top: -45px;
+}
+.FollowUs {
+	margin-bottom: 20px;
+}
+.FollowUs .heading {
+	font-style: italic; margin-bottom: 10px;
+}
+.FollowUs .heading a {
+	color: inherit;
+}
+.FollowUs .facebook {
+	padding-bottom: 10px; margin-bottom: 10px; border-bottom-color: rgb(172, 172, 172); border-bottom-width: 1px; border-bottom-style: dotted; position: relative; z-index: 1;
+}
+.FollowUs .google {
+	display: inline-block;
+}
+.FollowUs .twitter {
+	display: inline-block;
+}
+.FollowUs .twitter {
+	width: 202px;
+}
+.FollowUs .google {
+	width: 90px;
+}
+.ShareTools {
+	margin: 0px 0px 10px; height: 20px; position: relative;
+}
+.ShareTools .item {
+	display: inline-block; list-style-type: none; position: relative;
+}
+.ShareTools .facebook {
+	top: -3px; width: 140px;
+}
+.ShareTools .twitter {
+	width: 110px;
+}
+.ShareTools .google {
+	width: 90px;
+}
+.ShareTools .print {
+	top: -8px; width: 33px;
+}
+.Slider {
+	padding: 10px 40px; position: relative; box-shadow: 0px 0px 5px rgba(0,0,0,0.2); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+}
+.Slider .header {
+	margin: 0px 0px 10px;
+}
+.Slider .header a:hover {
+	text-decoration: underline;
+}
+.Slider .sliderWindow {
+	overflow: hidden; position: relative;
+}
+.Slider .sliderListing {
+	left: 0px; width: 900000px; height: 100%; position: absolute; z-index: 0;
+}
+.Slider .sliderListing li {
+	list-style: none; overflow: hidden; float: left;
+}
+.Slider .sliderListing .page li {
+	margin-right: 10px;
+}
+.Slider .prev {
+	border-radius: 50px; top: 50%; width: 36px; height: 36px; text-indent: -5000px; margin-top: -18px; display: block; position: absolute; z-index: 1; -moz-border-radius: 50px; -webkit-border-radius: 50px;
+}
+.Slider .next {
+	border-radius: 50px; top: 50%; width: 36px; height: 36px; text-indent: -5000px; margin-top: -18px; display: block; position: absolute; z-index: 1; -moz-border-radius: 50px; -webkit-border-radius: 50px;
+}
+.Slider .prev {
+	left: -12px; background-repeat: no-repeat;
+}
+.Slider .next {
+	left: inherit; right: -12px; background-repeat: no-repeat;
+}
+.Slider .header div {
+	color: rgb(102, 102, 102);
+}
+.Slider .more {
+	color: rgb(102, 102, 102);
+}
+.Slider .Inline.ArticlePreview {
+	margin: 0px;
+}
+.Slider .Inline.ArticlePreview .title {
+	margin-left: 100px;
+}
+.Slider .Inline.ArticlePreview .excerpt {
+	margin: 0px 0px 0px 100px;
+}
+.Slider .prev {
+	background-color: rgb(51, 51, 51);
+}
+.Slider .next {
+	background-color: rgb(51, 51, 51);
+}
+.Pagination {
+	margin: 20px 0px; height: 20px; text-align: center;
+}
+.Pagination li {
+	list-style: none; padding: 2px 5px; border: 1px solid rgb(172, 172, 172); display: inline-block;
+}
+.Pagination .selected {
+	color: rgb(102, 102, 102); background-color: rgb(214, 214, 214);
+}
+.PageHeader {
+	margin-bottom: 10px;
+}
+.PageHeader .heading {
+	margin-right: 20px; float: left;
+}
+.PageHeader .ShareTools {
+	margin: 8px 0px 0px; float: left;
+}
+.PageHeader .RSS {
+	margin-top: 8px; float: right;
+}
+.BrowseList {
+	padding: 15px; background-color: rgb(228, 244, 255);
+}
+.BrowseList .header {
+	margin: 0px 0px 10px;
+}
+.BrowseList .more {
+	width: 130px; margin-top: 8px;
+}
+.BrowseList .less {
+	width: 130px; margin-top: 8px;
+}
+.BrowseList .more .text {
+	float: right;
+}
+.BrowseList .less .text {
+	float: right;
+}
+.BrowseList .more .arrow {
+	margin: 3px 0px 0px 5px; width: 0px; height: 0px; border-top-color: red; border-right-color: transparent; border-left-color: transparent; border-top-width: 10px; border-right-width: 5px; border-left-width: 5px; border-top-style: solid; border-right-style: solid; border-left-style: solid; float: right; display: block;
+}
+.BrowseList .less .arrow {
+	margin: 3px 0px 0px 5px; width: 0px; height: 0px; border-top-color: red; border-right-color: transparent; border-left-color: transparent; border-top-width: 10px; border-right-width: 5px; border-left-width: 5px; border-top-style: solid; border-right-style: solid; border-left-style: solid; float: right; display: block;
+}
+.BrowseList .more .arrow {
+	border-top-color: rgb(10, 91, 147); border-top-width: 10px; border-top-style: solid;
+}
+.BrowseList .less .arrow {
+	border-bottom-color: rgb(10, 91, 147); border-bottom-width: 10px; border-bottom-style: solid;
+}
+html {
+	background-color: rgb(0, 0, 0);
+}
+#Header {
+	background-color: rgb(51, 51, 51);
+}
+#secondaryNav .label:hover {
+	color: rgb(10, 91, 147);
+}
+#primaryNav .title:hover {
+	color: rgb(10, 91, 147);
+}
+#primaryNav .huvr .title {
+	color: rgb(10, 91, 147);
+}
+#primaryNav .body .title {
+	color: rgb(10, 91, 147);
+}
+#secondaryNav .huvr .label {
+	color: rgb(10, 91, 147);
+}
+#primaryNav .body a:hover {
+	background-color: rgb(228, 244, 255);
+}
+#searchFooter {
+	background-color: rgb(51, 51, 51);
+}
+.RelatedCategories .header {
+	color: rgb(51, 51, 51);
+}
+.Module .more {
+	color: rgb(51, 51, 51);
+}
+.Module .less {
+	color: rgb(51, 51, 51);
+}
+.thingsYouNeed .header {
+	background-color: rgb(51, 51, 51);
+}
+.thingsYouNeed .cbox {
+	background-color: rgb(51, 51, 51);
+}
+.ArticlePreview .more {
+	color: rgb(10, 91, 147);
+}
+.Filter .item::before {
+	background-color: rgb(10, 91, 147);
+}
+.Filter .active .link {
+	color: rgb(51, 51, 51);
+}
+.Filter .active::before {
+	background-color: rgb(51, 51, 51);
+}
+.SponsoredLinks .count {
+	color: rgb(10, 91, 147);
+}
+.Search .submit {
+	background-color: rgb(0, 75, 127);
+}
+.Icon {
+	background-color: rgb(10, 91, 147);
+}
+.RSS {
+	background-color: rgb(10, 91, 147);
+}
+.warningIcon {
+	background-color: rgb(10, 91, 147);
+}
+.tipIcon {
+	background-color: rgb(10, 91, 147);
+}
+.Icon:hover .RSS:hover {
+	background-color: rgb(10, 91, 147);
+}
+.warningIcon:hover {
+	background-color: rgb(10, 91, 147);
+}
+.tipIcon:hover {
+	background-color: rgb(10, 91, 147);
+}
+.Icon:hover {
+	background-color: rgb(10, 91, 147);
+}
+.ModalFrame .submit {
+	background-color: rgb(51, 51, 51);
+}
+.ModalWindow .modalSlideshow .button {
+	background: rgb(51, 51, 51);
+}
+.ModalWindow .copyContainer .slideTitle {
+	color: rgb(51, 51, 51);
+}
+.PremiumVideoSeries .VideoSeries {
+	background-color: rgb(10, 91, 147);
+}
+.PremiumVideoSeries .VideoSeries .page li:hover {
+	border-color: rgb(51, 51, 51); background-color: rgb(228, 244, 255);
+}
+.PremiumVideoSeries .VideoSeries .sliderListing .page li:hover .title {
+	color: rgb(51, 51, 51);
+}
+.PremiumVideoSeries .betaMax .overlay {
+	background-color: rgb(10, 91, 147);
+}
+a {
+	color: rgb(10, 91, 147);
+}
+button {
+	color: rgb(10, 91, 147);
+}
+.link {
+	color: rgb(10, 91, 147);
+}
+.VideoSeries .sliderListing .selected .title {
+	background-color: rgb(10, 91, 147);
+}
+#VideoPlayer {
+	border-color: rgb(10, 91, 147);
+}
+.steps .stepNumber {
+	color: rgb(10, 91, 147);
+}
+#RelatedVideos .videosBox .button {
+	background-color: rgb(51, 51, 51);
+}
+.Tabs {
+	border-color: rgb(51, 51, 51);
+}
+.Tabs a:hover {
+	background-color: rgb(51, 51, 51);
+}
+.Tabs .selected a {
+	background-color: rgb(51, 51, 51);
+}
+.Authors {
+	background-color: rgb(228, 244, 255);
+}
+.Authors .item {
+	border-color: rgb(10, 91, 147);
+}
+.Authors .item:hover {
+	background-color: rgb(51, 51, 51);
+}
+.trigger.byline {
+	color: rgb(10, 91, 147);
+}
+#PLATFORM_TL {
+	background-color: rgb(228, 244, 255);
+}
+#PLATFORM_CENTER li .vertical-a:hover {
+	background-color: rgb(228, 244, 255);
+}
+#PLATFORM_TL li .vertical-a {
+	border-color: rgb(10, 91, 147);
+}
+#PLATFORM_CENTER-h4 span {
+	border-color: rgb(10, 91, 147);
+}
+.FeaturedArticle .writer {
+	color: rgb(10, 91, 147);
+}
+.FeaturedArticle .Heading3 {
+	color: rgb(10, 91, 147);
+}
+.FeaturedArticle .Sidebar .title {
+	color: rgb(10, 91, 147);
+}
+.Sidebar .tape {
+	background-color: rgb(10, 91, 147);
+}
+.ArticleFlip .Sidebar .title {
+	color: rgb(10, 91, 147); cursor: pointer;
+}
+.FeaturedArticle .PullQuote {
+	border-color: rgb(10, 91, 147);
+}
+.FeaturedArticle .PullQuote .quote {
+	color: rgb(10, 91, 147);
+}
+.FeaturedArticle .UnorderedTitleList .title:hover {
+	background-color: rgb(228, 244, 255);
+}
+.Slider .prev {
+	background-color: rgb(51, 51, 51);
+}
+.Slider .next {
+	background-color: rgb(51, 51, 51);
+}
+#AuthorProfile {
+	background: rgb(228, 244, 255);
+}
+.SlideShow .wideHeader {
+	color: rgb(51, 51, 51); border-bottom-color: rgb(51, 51, 51);
+}
+.Slideshow .controlButton {
+	background-color: rgb(10, 91, 147);
+}
+.SlideShow .controlButton {
+	background-color: rgb(10, 91, 147);
+}
+.slideshowsSlider .control {
+	background-color: rgb(51, 51, 51);
+}
+#SlideshowContainer .title {
+	color: rgb(51, 51, 51);
+}
+.SlideShow .SliderContainer {
+	background-color: rgb(51, 51, 51);
+}
+.SliderContainer .sliderBody .currentArrow {
+	background-color: rgb(51, 51, 51);
+}
+.SliderContainer .sliderBody .next {
+	background-color: rgb(10, 91, 147);
+}
+#RelatedSlideshows .restartButton {
+	background-color: rgb(10, 91, 147);
+}
+.SliderContainer .sliderBody .prev {
+	background-color: rgb(10, 91, 147);
+}
+.PostPlate2 .sidebar .replay .Heading3 {
+	color: rgb(51, 51, 51);
+}
+#RelatedSlideshows .fancyButton {
+	background-color: rgb(10, 91, 147);
+}
+#RelatedSlideshows .title {
+	color: rgb(10, 91, 147);
+}
+.StepByStep #RelatedSlideshows .title {
+	color: rgb(10, 91, 147);
+}
+#FeaturedContentTest .description {
+	background-color: rgba(51, 51, 51, 0.85);
+}
+.StepByStep .RelatedArticles .tagline {
+	color: rgb(51, 51, 51);
+}
+.StepByStep .thingsYouNeed .title {
+	color: rgb(10, 91, 147);
+}
+.StepByStep .thingsYouNeed .cbox {
+	background-color: rgb(10, 91, 147);
+}
+.StepByStep .StepSlider .button {
+	background-color: rgb(37, 142, 215);
+}
+.ArticleFlip .sectionTitle {
+	color: rgb(10, 91, 147); padding-top: 20px;
+}
+.ArticleFlip .PullQuote {
+	border-top-color: rgb(10, 91, 147); border-bottom-color: rgb(10, 91, 147);
+}
+.PullQuote .quote {
+	color: rgb(51, 51, 51);
+}
+.PremiumVideoSeries .SeriesHeader .title {
+	color: rgb(51, 51, 51);
+}
+.Tech .PremiumVideoSeries .SeriesHeader .title {
+	color: rgb(10, 91, 147);
+}
+.SlideShow5 .right {
+	background-color: rgb(51, 51, 51);
+}
+#Tombstone .ContentPreview .title {
+	color: rgb(10, 91, 147);
+}
+.PageHeader .subtitle {
+	font-style: italic;
+}
+.Group .PageHeader {
+	line-height: inherit;
+}
+.Experts .PageHeader {
+	line-height: inherit;
+}
+.Group .PageHeader .heading {
+	float: none;
+}
+.Experts .PageHeader .heading {
+	float: none;
+}
+.Group .PageHeader .subtitle {
+	display: block;
+}
+.Experts .PageHeader .subtitle {
+	display: block;
+}
+.Post {
+	border-width: 1px 1px 0px; border-style: solid; border-color: rgb(194, 194, 194); padding: 19px;
+}
+:last-child.Post {
+	border-width: 1px;
+}
+.Post .type {
+	color: rgb(51, 51, 51); text-transform: uppercase; font-weight: bold; margin-bottom: 2px;
+}
+.Post .title {
+	margin-bottom: 5px; display: block;
+}
+.hasImage .excerpt {
+	margin-left: 150px;
+}

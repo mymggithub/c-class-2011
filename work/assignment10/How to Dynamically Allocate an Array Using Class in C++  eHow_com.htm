@@ -1,0 +1,759 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0068)http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html -->
+<!DOCTYPE html><!--[if IE]><![endif]--><HTML lang="en-US" class="Tech en-US" 
+data-channel="tech" xmlns:fb = "http://www.facebook.com/2008/fbml" xmlns:og = 
+"http://ogp.me/ns#"><HEAD>
+<META charset="utf-8">
+<META name="description" content="How to Dynamically Allocate an Array Using Class in C++. In basic C++ programming, variables and arrays are declared by the programmer directly in code. However, when building data structures such as dynamically resizing arrays, the programmer must learn to dynamically allocate memory during code execution. Arrays allocated in this fashion have a...">
+<META name="y_key" content="4d4cb4ef1ad334cb">
+<META name="alexaVerifyID" content="xlJch1oUHrXNtOQBpiuUCV0-rlc">
+<META name="msvalidate.01" content="5F1B06EBE88583F1C05B9114514366ED">
+<META name="cachetime" content="201205101304">
+<META name="articleid" content="8601619">
+<META name="articletype" content="professional">
+<META name="articletypeid" content="Professional">
+<META name="author" content="G.S. Jackson">
+<META name="authorid" content="d2b8967d-61e9-440a-a37d-6d2bf1d9b598">
+<META name="publishdate" content="06/15/2011 22:56:14">
+<META name="hasimages" content="True">
+<META name="hasvideo" content="False">
+<META name="center" content="Computers">
+<META name="centerid" content="5">
+<META name="centerurl" content="computers">
+<META name="list" content="Computer Programming">
+<META name="listid" content="1219">
+<META name="listurl" content="computer-programming">
+<META name="category" content="C/C++ Programming">
+<META name="categoryid" content="3356">
+<META name="categoryurl" content="cc-programming">
+<META name="articleimage" content="http://i.ehow.com/images/a08/6g/0j/dynamically-array-using-class-c-180x180.jpg">
+<META name="articletitleurl" content="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html">
+<LINK rel="canonical" href="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html">
+<LINK title="Subscribe to our RSS Feed" rel="alternate" type="application/rss+xml" 
+href="http://www.ehow.com/feed/ehow-tech.rss">
+<META scheme="DMINSTR2" name="studioid" content="37e553aa-8d81-46b8-9c9b-4a44b04f2f4e">
+<META scheme="DMINSTR2" name="contentid" content="8601619">
+<META scheme="DMINSTR2" name="category" content="Computers">
+<META scheme="DMINSTR2" name="subcategory" content="Computer Programming">
+<META scheme="DMINSTR2" name="subsubcat" content="C/C++ Programming">
+<META scheme="DMINSTR2" name="subpagetype" content="how_to">
+<META scheme="DMINSTR2" name="exp_page" content="ContentCuration-Test">
+<META scheme="DMINSTR2" name="wa_pchn" content="Tech">
+<META scheme="DMINSTR2" name="pagetype" content="article">
+<META scheme="DMINSTR2" name="wa_lr" content="en-US">
+<META scheme="DMINSTR2" name="siteid" content="EHWC">
+<META scheme="DMINSTR2" name="exp_name" content="desktop:default">
+<META scheme="DMINSTR2" name="wa_un" content="">
+<META scheme="DMINSTR2" name="wa_isreg" content="">
+<META scheme="DMINSTR2" name="wa_lgdin" content="">
+<META scheme="DMINSTR2" name="wa_clvl" content="1">
+<META scheme="DMINSTR2" name="wa_lgsrc" content="1">
+<META content="http://img.ehowcdn.com/og-image-tag/ehow/images/a08/6g/0j/dynamically-array-using-class-c-800x800.jpg" 
+property="og:image">
+<META content="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html" 
+property="og:url">
+<META content="article" property="og:type">
+<META content="How to Dynamically Allocate an Array Using Class in C++" 
+property="og:title">
+<META content="In basic C++ programming, variables and arrays are declared by the programmer directly in code. However, when building data structures such as dynamically resizing arrays, the programmer must learn to dynamically allocate memory during code execution. Arrays allocated in this fashion have a few benefits, such as non-constant length at declaration...." 
+property="og:description">
+<META content="63203377906" property="fb:app_id">
+<META content="604800" property="fb:ttl">
+<META content="eHow" property="og:site_name"><TITLE>How to Dynamically Allocate 
+an Array Using Class in C++ | eHow.com</TITLE><LINK rel="shortcut icon apple-touch-icon" 
+href="http://v5-static.ehowcdn.com/favicon.ico"><LINK rel="stylesheet" type="text/css" 
+href="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/common_header-918867ed.css">
+<LINK rel="stylesheet" type="text/css" href="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/tech-skin-696de6b4.css">
+<LINK rel="stylesheet" type="text/css" href="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/article-new-4984effd.css"><!--[if lt IE 9]>
+    <link href="http://v5-static.ehowcdn.com/ui/stylesheets/layout/ie.css" rel="stylesheet" /><![endif]--><!--[if IE 9]><![endif]-->
+<SCRIPT>window._omnitureLinkSetDomain = 'extended.dmtracker.com';</SCRIPT>
+
+<SCRIPT src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/common_header-27462106.js"></SCRIPT>
+
+<SCRIPT>
+		dartAds.setParams('computers', [
+			{ cat: 'computers'},
+			{ scat: 'computerprogramming'},
+			{ sscat: 'ccprogramming'},
+			{ art: 8601619},
+			{ vid: 0 },
+			{ ctype: 'articles' },
+			{ ugc: 0},
+			{ lvl: 4 } 					]);
+	</SCRIPT>
+
+<SCRIPT>
+  dmjs.global.glbBaseUrl="http:\/\/www.ehow.com";  dmjs.global.facebook={"app_id":"63203377906","login_service":"http:\/\/www.ehow.com\/services\/fb\/login\/","comment_service":"http:\/\/www.ehow.com\/services\/comment\/refresh\/"};  dmjs.urls={"cdn":"http:\/\/v5-static.ehowcdn.com","sitelife":"http:\/\/sitelife.ehow.com\/ver1.0\/","dmtracker":"vs.dmtracker.com"};  dmjs.global.IN_PRODUCTION=true;  dmjs.global.pool="default";  dmjs.global.skin="tech";  dmjs.global.asset_meta={"count":{"reference":2,"reference_link":2,"resource":0,"resource_link":0,"section":1,"section_headline":0,"step":4,"step_headline":0,"step_image":0,"things_needed":2,"tip":0,"warning":0,"word_detail":319,"word_summary":80}};  dmjs.global.facebook.xid="aG93Xzg2MDE2MTlfZHluYW1pY2FsbHktYXJyYXktdXNpbmctY2xhc3MtYy5odG1s";  dmjs.global.facebook.associate_on_comment=false;  dmjs.global.lazy_styles=["http:\/\/v5-static.ehowcdn.com\/content\/compressed\/print-1fc83e29.css"];
+</SCRIPT>
+
+<SCRIPT>var dexBaseURL=(("https:"==document.location.protocol) ? "https://a248.e.akamai.net/demdex.download.akamai.com/dm/" : "http://cdn.demdex.net/dm/");document.write(unescape("%3Cscript src='"+ dexBaseURL +  "demdex.js' type='text/javascript' %3E%3C/script%3E")); </SCRIPT>
+
+<SCRIPT>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-709906-67']);
+	try {
+		dmjs.GA.segment('Env','');
+		dmjs.GA.segment('Page', 'tech~article');
+		// TODO set module referrer based on query string?
+	} catch (e) {}
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</SCRIPT>
+<!--
+<PageMap>
+	<DataObject type="meta">
+		<Attribute name="articlethumbnail"><![CDATA[http://i.ehow.com/images/a08/6g/0j/dynamically-array-using-class-c-180x180.jpg]]></Attribute>
+		<Attribute name="articletype"><![CDATA[professional]]></Attribute>
+	</DataObject>
+</PageMap>
+-->
+<META name="format-detection" content="telephone=no">
+<SCRIPT src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/9718688.js"></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16443"></HEAD>
+<BODY class="Tech" data-skin="tech"><HEADER id="Header" 
+data-section="header"><SECTION class="Logo"><A class="image" href="http://www.ehow.com/"><IMG 
+alt="eHow Logo" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/logo.png" 
+width="112" height="29"></A><A class="channel" href="http://www.ehow.com/ehow-tech/">tech 
+section</A></SECTION>
+<FORM id="searchHeader" class="Search" method="get" action="http://www.ehow.com/search.html"><INPUT 
+class="text" name="s" type="text" data-type="searchinput"><INPUT name="skin" 
+value="tech" type="hidden"><INPUT name="t" value="all" type="hidden">
+<DIV class="submit"><INPUT class="button" value="Search" type="submit"></DIV>
+</FORM><NAV id="primaryNav" role="navigation">
+<UL>
+  <LI id="Dropdown_Computers" class="list Dropdown"><SPAN class="Heading4 label title">Computers</SPAN>
+  <UL class="body">
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-desktops/">Desktops</A></LI>
+    <LI><A class="url" href="http://www.ehow.com/ehow_tech-laptops-and-netbooks/">Laptops 
+    &amp; Netbooks</A></LI>
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-software/">Software</A></LI></UL></LI>
+  <LI id="Dropdown_HomeTheater" class="list Dropdown"><SPAN class="Heading4 label title">Home 
+  Theater</SPAN>
+  <UL class="body">
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-dvr-dvd-blu-ray/">DVR, DVD, 
+    Blu-ray</A></LI>
+    <LI><A class="url" href="http://www.ehow.com/ehow_tech-sound-systems/">Sound 
+    Systems</A></LI>
+    <LI><A class="url" 
+  href="http://www.ehow.com/ehow_tech-tvs/">TVs</A></LI></UL></LI>
+  <LI id="Dropdown_Mobile" class="list Dropdown"><SPAN class="Heading4 label title">Mobile</SPAN>
+  <UL class="body">
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-phones/">Phones</A></LI>
+    <LI><A class="url" href="http://www.ehow.com/ehow_tech-tablets-and-ereaders/">Tablets 
+    &amp; eReaders</A></LI>
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-navigation-and-gps/">Navigation &amp; 
+    GPS</A></LI></UL></LI>
+  <LI id="Dropdown_PersonalElectronics" class="list Dropdown"><SPAN class="Heading4 label title">Personal 
+  Electronics</SPAN>
+  <UL class="body">
+    <LI><A class="url" 
+href="http://www.ehow.com/ehow_tech-audio/">Audio</A></LI>
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-digital-cameras/">Digital 
+    Cameras</A></LI>
+    <LI><A class="url" href="http://www.ehow.com/ehow_tech-video-and-camcorders/">Video 
+    &amp; Camcorders</A></LI></UL></LI>
+  <LI id="Dropdown_Web" class="list Dropdown"><SPAN 
+  class="Heading4 label title">Web</SPAN>
+  <UL class="body">
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-browsers/">Browsers</A></LI>
+    <LI><A class="url" 
+href="http://www.ehow.com/ehow_tech-email/">Email</A></LI>
+    <LI><A class="url" href="http://www.ehow.com/ehow_tech-stay-connected/">Stay 
+    Connected</A></LI>
+    <LI><A class="url" 
+    href="http://www.ehow.com/ehow_tech-websites/">Websites</A></LI></UL></LI></UL></NAV>
+<NAV id="secondaryNav" role="navigation">
+<UL>
+  <LI class="Dropdown"><A class="label" 
+  href="http://www.ehow.com/how-to.html">More eHow</A>
+  <UL class="ChannelListing body">
+    <LI class="list"><A class="Heading4 title home" href="http://www.ehow.com/ehow-home/">home</A></LI>
+    <LI class="list"><A class="Heading4 title style" href="http://www.ehow.com/ehow-style/">style</A></LI>
+    <LI class="list"><A class="Heading4 title food" href="http://www.ehow.com/ehow-food/">food</A></LI>
+    <LI class="list"><A class="Heading4 title money" href="http://www.ehow.com/ehow-money/">money</A></LI>
+    <LI class="list"><A class="Heading4 title health" href="http://www.ehow.com/ehow-health/">health</A></LI>
+    <LI class="list"><A class="Heading4 title mom" href="http://www.ehow.com/ehow-mom/">mom</A></LI>
+    <LI class="list"><A class="Heading4 title tech" href="http://www.ehow.com/ehow-tech/">tech</A></LI></UL></LI></UL>
+</NAV></HEADER>
+<DIV style="position: absolute;" id="DartAd249x77"> 
+<SCRIPT>dartAds.renderiFrameAd([{ sz: '249x77' }, {dcopt: 'ist' }], 249);</SCRIPT>
+</DIV>
+<DIV id="SubHeader" class="SubHeader" data-section="subheader">
+<DIV id="sparkNav"></DIV>
+<SCRIPT>
+		var sparkNav = document.createElement("script"); sparkNav.async = true;
+		sparkNav.src = "http://www.ehow.com/spark/services/nav/";
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sparkNav, s);
+	</SCRIPT>
+
+<DL class="Grid6 links">
+  <DT class="Heading6 header">Featured:</DT>
+  <DD class="item"><A class="Heading6 url" href="http://www.ehow.com/videos-on_12222462_allergies.html">What 
+  Are Allergies?</A></DD>
+  <DD class="item"><A class="Heading6 url" href="http://www.ehow.com/video_12223549_buy-smartphone-budget.html">Tech 
+  Know</A></DD>
+  <DD class="item"><A class="Heading6 url" href="http://www.ehow.com/ehow_food-grill-roast-fry/">Grilling 
+  Guide</A></DD>	</DL></DIV>
+<DIV id="DartAd990x90" class="Ad" data-module="dart-ad-990x90">
+<SCRIPT>dartAds.renderiFrameAd([{ sz: '990x90,728x90' }], 990);</SCRIPT>
+</DIV><SECTION id="Body" class="ArticleStepsv2 FLC" data-section="body" 
+data-page-id="articlestepsv2"><!-- google_ad_section_start(weight="0") -->
+<OL id="Breadcrumbs" class="Grid12 Note Breadcrumbs" data-module="breadcrumb" 
+itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="">
+  <LI class="list"><A class="title" href="http://www.ehow.com/" rel="home" 
+  itemprop="url"><SPAN itemprop="title">eHow</SPAN></A></LI>
+  <LI class="list" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" 
+  itemprop="child"><A class="title" href="http://www.ehow.com/computers/" rel="directory" 
+  itemprop="url"><SPAN itemprop="title">Computers</SPAN></A></LI>
+  <LI class="list" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" 
+  itemprop="child"><A class="title" href="http://www.ehow.com/computer-memory/" 
+  rel="directory" itemprop="url"><SPAN itemprop="title">Computer 
+  Memory</SPAN></A></LI>
+  <LI class="list" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" 
+  itemprop="child"><A class="title" href="http://www.ehow.com/use-memory/" rel="directory" 
+  itemprop="url"><SPAN itemprop="title">Use Memory</SPAN></A></LI>
+  <LI class="list" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" 
+  itemprop="child"><A class="title" href="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html" 
+  rel="directory" itemprop="url"><SPAN itemprop="title">How to Dynamically 
+  Allocate an Array Using Class in C++</SPAN></A></LI></OL><!-- google_ad_section_end() -->
+<DIV class="Grid8"><ARTICLE data-type="article"><HEADER class="header"><!-- google_ad_section_start() -->
+<H1 id="nointelliTXT" class="articleTitle Heading1" 
+data-module="article-title">How to Dynamically Allocate an Array Using Class in 
+C++</H1><!-- google_ad_section_end() --></HEADER><FOOTER class="footer" 
+data-module="article-author">
+<SCRIPT type="text/html" data-type="AuthorProfile">
+<footer class="AuthorProfileWrap footer">
+		<div id="AuthorProfile">
+		<div class="wrapper">
+			<div class="ModalClose close">X</div>
+			<img src="http://img.ehowcdn.com/author-avatar/studio-image/ver1.0/Content/images/store/4/4/54ac230c-5663-4e43-84be-59d25df1384e.Small.jpg" />			<div class="Heading3">
+				G.S. Jackson							</div>
+			<p class="bio">
+				Gerald Jackson is a graduate from Southern Illinois University Edwardsville specializing in English and literature with minor studies in computer science. He plans on attending graduate school in 2010 to pursue rhetoric and composition, and looks forward to finding opportunities to apply his love of writing with his interest in computers and technology.			</p>
+								</div>
+	</div>
+	<div >
+				<div>
+				<span class="byline trigger">By  G.S. Jackson<span class="about">, eHow Contributor</span></span>
+		                <time datetime="2011-06-16T02:03:59-04:00" class="Note pubdate">, last updated June 15, 2011</time>
+				</div>
+	</footer>
+</SCRIPT>
+
+<DIV class="AuthorByLine" data-profile="AuthorProfileContainer"></DIV></FOOTER>
+<DIV class="articlePhoto" data-module="article-main-photo"><FIGURE class="Thumbnail"><A 
+data-type="modal" data-modal-content="Jupiterimages/Photos.com/Getty Images " 
+data-href="http://img.ehowcdn.com/article-new-intro-modal/ehow/images/a08/6g/0j/dynamically-array-using-class-c-800x800.jpg"><IMG 
+class="photo" title="" alt="How to Dynamically Allocate an Array Using Class in C++ thumbnail" 
+src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/article-new_ehow_images_a08_6g_0j_dynamically-array-using-class-c-800x800.jpg" 
+longDesc="http://i.ehow.com/images/a08/6g/0j/dynamically-array-using-class-c-800x800.jpg"></A></FIGURE><FIGCAPTION 
+class="mainCaption">									Dynamic memory allocation in C++ allows for the 
+creation of variable size arrays and flexible data 
+structures.								</FIGCAPTION>
+<SCRIPT>
+									var containerWidth = parseInt($('.Grid8').css('width'), 10);
+									$('.articlePhoto img').bind('load', function() {
+										var img = $(this);
+										var w = img.width();
+										if (w < (containerWidth*.80)) {
+											$('.articlePhoto').css({'float': 'right','margin-left': '20px'});
+											$('.articlePhoto a').cropd({
+												maxWidth: 300,
+												maxHeight: 200
+											});
+										}
+									});
+								</SCRIPT>
+</DIV><!-- google_ad_section_start() -->
+<P id="intelliTxt" class="intro" data-module="article-intro">In basic C++ 
+programming, variables and arrays are declared by the programmer directly in 
+code. However, when building data structures such as dynamically resizing 
+arrays, the programmer must learn to dynamically allocate memory during code 
+execution. Arrays allocated in this fashion have a few benefits, such as 
+non-constant length at declaration. The programmer can allocate arrays of scalar 
+data types and user-created classes identically. Using pointers and keywords 
+built into the standard library, C++ makes memory allocation and deletion 
+straightforward. 						
+<DIV id="relatedContentUpper" class="RelatedContent Module"><HEADER>
+<H3 class="header Heading3">Other People Are Reading</H3></HEADER>
+<UL class="PeopleReading FLC" data-type="more-relatedArticles">
+  <LI class="item"><A href="http://www.ehow.com/info_12213572_can-dynamically-allocate-array-size.html"><IMG 
+  class="thumb" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/other-people_ehow_images_ehow_cat_computers_computers5.jpg"><SPAN 
+  class="title">How Can We Dynamically Allocate Array Size?</SPAN></A></LI>
+  <LI class="item mid"><A href="http://www.ehow.com/how_2076844_do-dynamic-storage-allocation-c.html"><IMG 
+  class="thumb" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/other-people_ehow_images_ehow_cat_computers_computers3.jpg"><SPAN 
+  class="title">How to Do Dynamic Storage Allocation in C</SPAN></A></LI></UL>
+</DIV><!-- google_ad_section_end() -->
+<DIV>
+<UL class="ShareRail" data-module="share-rail">
+  <LI class="item facebook"><fb:like ref="like" font="arial" width="50" send="true" 
+  layout="box_count" href="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html"></fb:like></LI>
+  <LI class="item twitter"><A class="twitter-share-button" data-via="eHow" 
+  data-url="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html" 
+  data-count="vertical"></A></LI>
+  <LI class="item google"><g:plusone href="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html" 
+  size="tall"></g:plusone></LI>
+  <LI class="item print"><A class="url" title="Print this article" data-url="http://www.ehow.com/print/how_8601619_dynamically-array-using-class-c.html">Print 
+  this article</A></LI></UL></DIV>
+<DIV class="Grid7 Push1 Alpha Omega"><SECTION class="Module body" data-module="article-body"><!-- google_ad_section_start() -->
+<DIV class="AdWrapper">
+<DIV id="thingsYouNeed"><SECTION class="thingsYouNeed">
+<DIV class="container"><HEADER>
+<H4 class="header Heading5"><SPAN>Things You'll Need</SPAN></H4></HEADER>
+<UL class="UnorderedTitleList">
+  <LI class="FLC">
+  <DIV class="cbox"></DIV><SPAN class="title">Text Editor</SPAN></LI>
+  <LI class="FLC">
+  <DIV class="cbox"></DIV><SPAN class="title">C/C++ Compiler (Such as Microsoft 
+  Visual Studio or GCC)</SPAN></LI></UL><A class="moreItems" 
+data-action="toggle">Show More</A></DIV></SECTION></DIV>
+<DIV class="AdUnit160">
+<SCRIPT>
+							DartUtils.loadGoogle160 = function() {
+									dmjs.runInlineAd = true;
+									$('.AdUnit160').hide();
+									$('.AdWrapper').addClass('no160');
+							};
+							dartAds.renderiFrameAd([{ sz: '160x600' }], 160);
+					</SCRIPT>
+</DIV></DIV>
+<H2 class="Heading2">Instructions</H2><SECTION>
+<OL id="intelliTxt" class="steps">
+  <LI class="section">
+  <UL>
+    <LI class="step "><SPAN class="stepNumber">1</SPAN>
+    <DIV class="stepMeat">
+    <DIV itemprop="step">
+    <P>Create a pointer of the data type the array will contain. For example, to 
+    dynamically create an array of integers, an integer pointer must exist to 
+    reference the array:</P>
+    <P>int * arr_ptr;</P>
+    <P>The pointer "arr_ptr" will now allow a programmer to reference deep 
+    memory during execution.</P></DIV></DIV></LI>
+    <LI class="step "><SPAN class="stepNumber">2</SPAN>
+    <DIV class="stepMeat">
+    <DIV itemprop="step">
+    <P>Use the pointer to allocate memory. The "new" keyword, which is specific 
+    to the C++ libraries (and not available in standard C) claims memory during 
+    execution for use of the calling pointer:</P>
+    <P>arr_ptr = new int [6];</P>
+    <P>Here, the "new" keyword grabs a block of six integer-sized sections of 
+    memory. However, unlike arrays declared before run time, dynamic arrays can 
+    be declared with variable input:</P>
+    <P>int i = 6;</P>
+    <P>arr_ptr = new int [i];</P>
+    <P>This allows the programmer to create arrays that can resize based on need 
+    rather than predetermined space designation.</P></DIV></DIV></LI>
+    <LI class="googleAd">
+    <DIV id="DMINSTR" data-type="adTracking" name="&amp;adunit_id=ca-ehow_300x250&amp;ad_unit_type=CNT&amp;ad_unit_network=GAP&amp;revenue_basis=CPC&amp;ad_position=-&amp;revenue_tag=cpu_computer_programming" 
+    type="adimpression">
+    <DIV id="GoogleAdsense300x250"></DIV>
+<SCRIPT>
+			dmjs.revenueTags.push('ca-ehow_300x250;cpu_computer_programming,text,suggested8');
+			googleAds.addAdUnit({
+				priority : 3,
+				adUnitId : 'GoogleAdsense300x250',
+				enabled: false,
+				google_ad_channel : 'cpu_computer_programming,text,suggested8',
+				google_ad_client : 'ca-ehow_300x250',
+				google_max_num_ads : '1',
+				google_ad_type: 'text',
+				templates: {
+					text : [
+					'<div class="GoogleTextAd GoogleAd300x250">',
+							'<p><a class="header" href="{!= google_info.feedback_url !}">Sponsored Links</a></p>',
+							'<ul id="nointelliTXT">',
+							'{! for (var i = 0; i < ads.length; i++) { !}',
+								'<li class="Ad">',
+									'<a rel="nofollow" href="{!= ads[i].url !}" target="_blank" title="go to {!= clean(ads[i].visible_url) !}" class="title">',
+										'{!= ads[i].line1 !}',
+									'</a>',
+									'<p class="copy">{!= ads[i].line2 !} {!= ads[i].line3 !}</p>',
+									'<a rel="nofollow" href="{!= ads[i].url !}" target="_blank" title="go to {!= clean(ads[i].visible_url) !}" class="baseurl url">',
+										'{!= ads[i].visible_url !}',
+									'</a>',
+								'</li>',
+							'{! } !}',
+							'</ul>',
+						'</div>'].join('')
+				}
+			});
+		</SCRIPT>
+    </DIV></LI>
+    <LI class="step "><SPAN class="stepNumber">3</SPAN>
+    <DIV class="stepMeat">
+    <DIV itemprop="step">
+    <P>Allocate an array of user-created data types. Following C++ memory 
+    allocation procedure, the programmer can create arrays of data types 
+    declared in separate classes:</P>
+    <P>int i = 5;</P>
+    <P>newClass * class_ptr;</P>
+    <P>class_ptr = new newClass [i];</P>
+    <P>The pointer "class_ptr" will reference a variable of the "newClass" data 
+    type, most likely defined in a class description in another 
+    file.</P></DIV></DIV></LI>
+    <LI class="step "><SPAN class="stepNumber">4</SPAN>
+    <DIV class="stepMeat">
+    <DIV itemprop="step">
+    <P>Delete the array. When an array is no longer needed (or has been copied 
+    into another array, possibly during a resizing operation) the programmer 
+    should make sure to delete it. Allocated memory that is not deleted, but no 
+    longer referenced, can take up valuable memory and, over time, cause what is 
+    known as a memory leak.</P>
+    <P>int i = 5;</P>
+    <P>newClass * class_ptr;</P>
+    <P>class_ptr = new newClass [i];</P>
+    <P>delete class_ptr[];</P>
+    <P>Now, the array referenced by "class_ptr" will be deleted, and the memory 
+    freed for other uses.</P></DIV></DIV></LI></UL></LI></OL></SECTION><!-- google_ad_section_end() --></SECTION>
+<DIV id="DMINSTR" data-type="adTracking" data-module="google-ad-336x280" name="&amp;adunit_id=ca-ehow_336x280&amp;ad_unit_type=CNT&amp;ad_unit_network=GAP&amp;revenue_basis=CPC&amp;ad_position=-&amp;revenue_tag=cpu_computer_programming" 
+type="adimpression">
+<DIV id="GoogleAdsense336x280" class="Module"></DIV>
+<SCRIPT>
+            dmjs.revenueTags.push('ca-ehow_336x280;cpu_computer_programming,text,suggested8');
+			googleAds.addAdUnit({
+				priority : 2,
+				adUnitId : 'GoogleAdsense336x280',
+				google_ad_channel : 'cpu_computer_programming,text,suggested8',
+				google_ad_client : 'ca-ehow_336x280',
+				google_max_num_ads : '4',
+								google_hints : '',
+												templates: {
+					text: '<div class="GoogleTextAd GoogleTextAdNew">\
+							<a class="header" href="{!= google_info.feedback_url !}">Sponsored Links</a>\
+							<ul>\
+							{! for (var i = 0; i < ads.length; i++) { !}\
+								<li class="Ad">\
+									<a rel="nofollow" target="_blank" href="{!= ads[i].url !}" title="go to {!= clean(ads[i].visible_url) !}" class="title">\
+										<span>{!= ads[i].line1 !}</span>\
+									</a>\
+									<a rel="nofollow" target="_blank" href="{!= ads[i].url !}" title="go to {!= clean(ads[i].visible_url) !}" class="baseurl url">\
+										{!= ads[i].visible_url !}\
+									</a>\
+									<p class="copy">{!= ads[i].line2 !} {!= ads[i].line3 !}</p>\
+								</li>\
+							{! } !}\
+							</ul>\
+						</div>',
+					image: '<div class="GoogleImageAd GoogleImageAdNew"> \
+								<a class="header" href="{!= google_info.feedback_url !}">Sponsored Links</a> \
+								<a href="{!= ads[0].url !}" title="go to {!= clean(ads[0].visible_url) !}" target="_blank" class="Ad" >\
+									<img src="{!= ads[0].image_url !}" width="{!= ads[0].image_width !}" height="{!= ads[0].image_height !}" border="0" alt="" />\
+								</a> \
+							</div>',
+					flash: '<div class="GoogleFlashAd GoogleFlashAdNew">\
+								<a class="header" href="{!= google_info.feedback_url !}">Sponsored Links</a> \
+								<div class="Ad">\
+									<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="{!= ads[0].image_width !}" height="{!= ads[0].image_height !}"><param name="movie" value="{!= ads[0].image_url !}"><param name="quality" value="high"><param name="AllowScriptAccess" value="never"><embed src="{!= ads[0].image_url !}" width="{!= ads[0].image_width !}" height="{!= ads[0].image_height !}" type="application/x-shockwave-flash" AllowScriptAccess="never" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed></object>\
+								</div>\
+							</div>'
+				},
+								google_image_size : '336x280'
+			});
+		</SCRIPT>
+</DIV>
+<DIV id="RelatedSearches" class="RelatedSearches FLC Module" data-module="related-searches"><SPAN 
+class="Heading2 header">Related Searches:</SPAN></DIV><SECTION class="Module resources" 
+data-module="references"><HEADER>
+<H2 class="Heading2 header"><SPAN 
+class="decoration"><SPAN>References</SPAN></SPAN></H2></HEADER><SECTION>
+<UL class="UnorderedTitleList">
+  <LI><A class="title" href="http://www.cplusplus.com/doc/tutorial/dynamic/" 
+  rel="nofollow" target="_blank">C++ Language: Dynamic Memory</A></LI>
+  <LI><A class="title" href="http://www.cplusplus.com/doc/tutorial/arrays/" rel="nofollow" 
+  target="_blank">C++ Language: Arrays</A></LI></UL></SECTION></SECTION><SECTION 
+class="Module photoCredit" data-module="photo-credit"><SECTION>
+<UL class="UnorderedTitleList">
+  <LI><SPAN class="title">Photo Credit 							Jupiterimages/Photos.com/Getty 
+  Images<SPAN data-url="" target="_blank" 
+data-copy=""></SPAN></SPAN></LI></UL></SECTION></SECTION></DIV>
+<DIV id="relatedContentLower" class="RelatedContent Module FLC"><HEADER>
+<H3 class="header Heading3">More Like This</H3></HEADER>
+<UL class="HorizontalRelated" data-type="more-relatedArticles">
+  <LI class="item"><A href="http://www.ehow.com/info_12213572_can-dynamically-allocate-array-size.html"><IMG 
+  class="thumb" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  data-img="http://img.ehowcdn.com/horizontal-related/ehow/images/ehow/cat/computers/computers5.jpg"><SPAN 
+  class="title">How Can We Dynamically Allocate Array Size?</SPAN></A></LI>
+  <LI class="item mid"><A href="http://www.ehow.com/how_2076844_do-dynamic-storage-allocation-c.html"><IMG 
+  class="thumb" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  data-img="http://img.ehowcdn.com/horizontal-related/ehow/images/ehow/cat/computers/computers3.jpg"><SPAN 
+  class="title">How to Do Dynamic Storage Allocation in C</SPAN></A></LI>
+  <LI class="item"><A href="http://www.ehow.com/how_8588566_remove-array-integers-using-c.html"><IMG 
+  class="thumb" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  data-img="http://img.ehowcdn.com/horizontal-related/ehow/images/a08/63/8m/remove-array-integers-using-c-180x180.jpg"><SPAN 
+  class="title">How to Remove an Index in a Dynamic Array of Integers Using 
+  C++</SPAN></A></LI></UL></DIV><FIGURE id="Comments" class="FLC" data-module="comments">
+<H2 class="Heading2 Headline"><SPAN 
+class="decoration">Comments</SPAN></H2><fb:comments width="615" href="http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html" 
+notify="true" num_posts="5"></fb:comments></FIGURE></ARTICLE></DIV>
+<DIV class="Grid4">
+<DIV id="DartAd300x250" class="AdUnit" data-module="dart-ad-300x250">
+<SCRIPT>dartAds.renderiFrameAd([{ sz: '300x250,300x600' }], 300, 250);</SCRIPT>
+</DIV>
+<DIV class="Module" data-module="radlinks">
+<H3 class="Heading4">Related Ads</H3>
+<DIV id="DMINSTR" data-type="adTracking" name="&amp;adunit_id=ca-ehow-radlinks_js&amp;ad_unit_type=LNK&amp;ad_unit_network=GAP&amp;revenue_basis=CPC&amp;ad_position=-&amp;revenue_tag=cpu_computer_programming" 
+type="rlimpression">
+<DIV id="GoogleRelatedAds"></DIV>
+<SCRIPT>
+            dmjs.revenueTags.push('ca-ehow-radlinks_js;cpu_computer_programming,text,suggested8');
+			googleAds.addAdUnit({
+				priority : 1,
+				adUnitId : 'GoogleRelatedAds',
+				google_ad_channel : 'cpu_computer_programming,text,suggested8',
+				google_ad_client : 'ca-ehow-radlinks_js',
+				google_max_num_ads : '0',
+				google_num_radlinks : '6',
+				google_max_radlink_len : '27',
+				metaData : {"contentid":"8601619","studioid":"37e553aa-8d81-46b8-9c9b-4a44b04f2f4e","category":"Computers","subcategory":"Computer Programming","skin":"tech","categoryid":5}			});
+		</SCRIPT>
+</DIV></DIV>
+<DIV class="Module SlideshowModule" data-module="slideshow-widget"><SECTION 
+class="SlideShow5 "><A class="SsTest5Opener" href="http://www.ehow.com/video_12232409_hdtv-overview.html"><IMG 
+class="photo" title="" alt="thumbnail" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+longDesc="http://s3.amazonaws.com/uploadedimages.demandmedia/istock_000001861388small.jpg" 
+data-img="http://img.ehowcdn.com/slideshow-article-thumb/cme/uploadedimages.demandmedia/istock_000001861388small.jpg"><SPAN 
+class="banner">					Watch Video				</SPAN></A>
+<DIV id="ssTest5a"><A id="ssTest5a-op-a" class="dmss-op-a" title="Click to view slideshow" 
+href="http://www.ehow.com/video_12232409_hdtv-overview.html">
+<H3 id="ssTest5a-op-title" class="dmss-op-title">						Optimize Your HDTV 
+Experience					</H3></A></DIV></SECTION>
+<DIV class="shadow"></DIV></DIV>
+<DIV id="relatedContent" class="Module"><HEADER>
+<H3 class="header Heading3">You May Like</H3></HEADER>
+<UL class="UnorderedTitleList" data-type="more-relatedArticles">
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_8588566_remove-array-integers-using-c.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/a08/63/8m/remove-array-integers-using-c-800x800.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_8588566_remove-array-integers-using-c.html">How 
+  to Remove an Index in a Dynamic Array of Integers Using 
+  C++</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_2190609_use-copy-constructors-c.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers2.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_2190609_use-copy-constructors-c.html">How 
+  to Use Copy Constructors in C++</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_8747551_convert-array-references-perl.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers1.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_8747551_convert-array-references-perl.html">How 
+  to Convert Array References in Perl</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_6583148_write-copy-constructor.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers4.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_6583148_write-copy-constructor.html">How 
+  to Write a Copy Constructor</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_8693211_remove-index-dynamic-array-integers.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers5.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_8693211_remove-index-dynamic-array-integers.html">How 
+  to Remove an Index in a Dynamic Array of Integers</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_8734235_can-length-anonymous-array-perl.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers3.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_8734235_can-length-anonymous-array-perl.html">How 
+  Can I Get the Length of an Anonymous Array in Perl?</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail article" 
+  data-url="http://www.ehow.com/how_5776041_save-vector-file-c__.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/ehow/images/ehow/cat/computers/computers2.jpg"></DIV></A><SPAN 
+  class="Heading4 title"><A href="http://www.ehow.com/how_5776041_save-vector-file-c__.html">How 
+  to Save a Vector to a File in C++</A></SPAN></DIV></LI>
+  <LI class="FLC">
+  <DIV class="ArticlePreview Inline title"><A class="Thumbnail video" data-url="http://www.ehow.com/video_4766633_use-memset-function-c.html">
+  <DIV class="imgWrap"><IMG alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+  width="98" height="73" data-img="http://img.ehowcdn.com/article-preview/viper/media/bd9f7bb0-38e6-43b6-b952-8884e21f1f36/jpeg/724e7680-8c75-4c7c-93dd-fa6b20c27acd_5.jpg"><SPAN 
+  class="playButton"></SPAN></DIV></A><SPAN class="Heading4 title"><A href="http://www.ehow.com/video_4766633_use-memset-function-c.html">How 
+  to Use the Memset Function in C++</A></SPAN></DIV></LI></UL></DIV><SECTION id="FeaturedContentTest" 
+class="Module">
+<H3 class="Title Heading3">Today in eHow Tech</H3>
+<DIV class="mainTest"><A id="s0" class="poster" href="http://www.ehow.com/video_12232849_getting-handle-twitter.html"><IMG 
+class="poster" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/fc-main-test_cme_uploadedimages.demandmedia_carley-tombstone-image.jpg"><SPAN 
+class="Heading5 description title">Getting a Handle on Twitter</SPAN></A></DIV>
+<UL class="slidesTest">
+  <LI><A id="s1" href="http://www.ehow.com/info_12223712_google-chrome-vs-firefox.html"><IMG 
+  src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/fc-thumb-test_cme_uploadedimages.demandmedia_istock_000016379562small.jpg" 
+  data-id="1" data-title="Which Browser is Right for You?"><SPAN class="Heading5 title">Which 
+  Browser is Right for You?</SPAN></A></LI>
+  <LI class="mid"><A id="s2" href="http://www.ehow.com/video_12232852_internet-television-smart-tvs-roku-apple-tv.html"><IMG 
+  src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/fc-thumb-test_viper_media_4a769269-ea18-410e-8e9e-949adec63e2f_jpeg_e1337253-27ae-43e3-bb38-571d15e7193f_0.jpg" 
+  data-id="2" data-title="Internet TV 101"><SPAN class="Heading5 title">Internet 
+  TV 101</SPAN></A></LI>
+  <LI><A id="s3" href="http://www.ehow.com/info_12223764_top-ten-kindle-tips.html"><IMG 
+  src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/fc-thumb-test_cme_uploadedimages.demandmedia_127503215.jpg" 
+  data-id="3" data-title="Top Ten Kindle Tips"><SPAN class="Heading5 title">Top 
+  Ten Kindle Tips</SPAN></A></LI></UL></SECTION></DIV><SECTION id="Tombstone" 
+class="Grid12 FLC" data-module="tombstone">
+<DIV class="Heading2 heading">Featured</DIV><SECTION class="Grid3 Alpha item" 
+data-cme-module="0"><ARTICLE class="ContentPreview"><A class="Thumbnail slideshow" 
+href="http://www.ehow.com/slideshow_12232282_great-mom-apps.html"><IMG class="photo" 
+alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+width="220" data-img="http://img.ehowcdn.com/tombstone/cme/uploadedimages.demandmedia/istock_000019308743small.jpg">
+<DIV class="Heading4 title">12 Great Apps for Moms</DIV><SPAN class="Heading6 ribbon">View 
+Photos</SPAN></A></ARTICLE></SECTION><SECTION class="Grid3 item" 
+data-cme-module="1"><ARTICLE class="ContentPreview"><A class="Thumbnail video" 
+href="http://www.ehow.com/video_12232849_getting-handle-twitter.html"><IMG 
+class="photo" alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+width="220" data-img="http://img.ehowcdn.com/tombstone/cme/uploadedimages.demandmedia/carley-tombstone-image.jpg">
+<DIV class="Heading4 title">Getting a Handle on Twitter</DIV><SPAN class="Heading6 ribbon">Watch 
+Video</SPAN></A></ARTICLE></SECTION><SECTION class="Grid3 item" data-cme-module="2"><ARTICLE 
+class="ContentPreview"><A class="Thumbnail slideshow" href="http://www.ehow.com/slideshow_12223988_jobs-side-online-marketplace.html"><IMG 
+class="photo" alt="" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+width="220" data-img="http://img.ehowcdn.com/tombstone/ds-photo/getty/article/178/247/87455862.jpg">
+<DIV class="Heading4 title">Jobs on the Side: Your Online Marketplace</DIV><SPAN 
+class="Heading6 ribbon">View Photos</SPAN></A></ARTICLE></SECTION><SECTION id="others" 
+class="Grid3 Omega featured">
+<DIV class="Heading3 heading">Others Also Viewed</DIV>
+<UL class="TitleList"><!-- google_ad_section_start(weight="0") -->
+  <LI class="item"><A class="Heading6 title article" href="http://www.ehow.com/how_8727707_allocate-pointers.html">How 
+  to Allocate Pointers</A></LI>
+  <LI class="item"><A class="Heading6 title article" href="http://www.ehow.com/how_8161935_add-two-arrays-using-pointers.html">How 
+  to Add Two Arrays Using Pointers</A></LI>
+  <LI class="item"><A class="Heading6 title article" href="http://www.ehow.com/how_8749643_allocate-2d-array-pointer.html">How 
+  to Allocate a 2D Array Pointer</A></LI>
+  <LI class="item"><A class="Heading6 title article" href="http://www.ehow.com/how_8440615_put-value-inside-array-matlab.html">How 
+  to Put a Value Inside an Array in MATLAB</A></LI>
+  <LI class="item"><A class="Heading6 title article" href="http://www.ehow.com/how_12226725_use-ctags-ultrastudio.html">How 
+  to Use Ctags With 
+UltraStudio</A></LI><!-- google_ad_section_end() --></UL></SECTION></SECTION></SECTION><FOOTER 
+id="Footer" class="Note" data-section="footer"><A class="logo" data-url="http://www.ehow.com/">ehow.com</A>
+<FORM id="searchFooter" class="Search" method="get" action="http://www.ehow.com/search.html"><INPUT 
+class="text" name="s" type="text" data-type="searchinput"><INPUT name="skin" 
+value="tech" type="hidden"><INPUT name="t" value="all" type="hidden">
+<DIV class="submit"><INPUT class="button" value="Search" type="submit"></DIV>
+</FORM><NAV>
+<UL class="listing FLC">
+  <LI class="item"><A class="title" 
+  href="http://www.ehow.com/about-us.html"><B>About eHow</B></A></LI>
+  <LI class="item"><A class="title" 
+  href="http://www.ehow.com/how-to.html"><B>How to by Topic</B></A></LI>
+  <LI class="item"><A class="title" 
+  href="http://www.ehow.com/videos.html"><B>How to Videos</B></A></LI>
+  <LI class="item"><A class="title" 
+  href="http://www.ehow.com/site-map.html"><B>Sitemap</B></A></LI></UL></NAV>
+<P id="finePrint" class="Note">Copyright © 1999-2012 Demand Media, Inc.<BR>Use 
+of this web site constitutes acceptance of the  eHow <A href="http://www.ehow.com/terms-of-use.html" 
+rel="noarchive">Terms of Use</A> and <A href="http://www.ehow.com/privacy.html" 
+rel="noarchive">Privacy Policy</A>. <A style="cursor: pointer !important;" id="_bapw-link"><IMG 
+style="vertical-align: middle !important; display: inline !important;" id="_bapw-icon"> 
+<SPAN style="vertical-align: middle !important;">Ad 
+Choices</SPAN></A><ABBR>en-US</ABBR></P>
+<DIV class="comscore"><IMG id="comscoreBrick" alt="eHow Technology Electronics" 
+src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+data-img="http://v5-static.ehowcdn.com/media/vendor/comscore/categories/technology-electronics.png"></DIV><A 
+id="verisignSeal" title="Click to Verify - This site chose VeriSign Trust Seal to promote trust online with consumers." 
+onclick="return verisignWindow(this)" href="https://trustsealinfo.verisign.com/splash?dn=www.ehow.com&amp;lang=en" 
+rel="nofollow"><IMG alt="Verisign seal" src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/pixel.gif" 
+data-img="http://v5-static.ehowcdn.com/media/vendor/verisign/seal.png"></A></FOOTER>
+<SCRIPT src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/common_footer-fffbb7b1.js"></SCRIPT>
+
+<SCRIPT src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/article-new-5cea52e9.js"></SCRIPT>
+
+<SCRIPT>
+		if ( $('#Tombstone .TitleList').length !== 0 ) { 
+			new OmnitureLinkSet($("#Tombstone .TitleList"), "LS103", "TOMB");
+		}
+	</SCRIPT>
+
+<SCRIPT>
+							dmjs.runInlineAd = true;
+				if(dmjs.runInlineAd && $('li.step').length > 3) {
+			googleAds.overrideAd('GoogleAdsense300x250', { enabled: true });
+		}
+		googleAds.defaults.google_adtest = 'off';
+		googleAds.defaults.google_page_url = 'http://www.ehow.com/how_8601619_dynamically-array-using-class-c.html';
+		googleAds.render();
+	dmjs.addLoadEvent(function() {
+			new OmnitureLinkSet($("#relatedContentUpper"), "TLS101", "default_IL");
+		new OmnitureLinkSet($("#relatedContentLower"), "TLS103", "default_B");
+		new OmnitureLinkSet($("#FeaturedContent"), "TLS104", "default_R1");
+		new OmnitureLinkSet($("#FeaturedContentTest"), "TLS105", "default_R2");
+		new OmnitureLinkSet($("#relatedContent"), "TLS102", "default_R3");
+		new OmnitureLinkSet($(".SlideshowModule"), "TLS106", "default_SS");
+		}, 3);
+
+				if (dmjs.cookies.readCookie('oml') != 'direct') {
+					dmjs.addLoadEvent(function(){
+					if(typeof(opIntellitxt)=="undefined" || opIntellitxt!==1) {
+						$.getScript("http://ehow.us.intellitxt.com/intellitxt/front.asp?ipid=6346");
+					}
+				}, 5);
+	}
+</SCRIPT>
+
+<SCRIPT>
+	dmjs.addLoadEvent(function(){var e=document,b,a=(e.location.protocol=="https:"?"https":"http"),c=(a=="https"?"https://info.evidon.com/c/betrad/pub/":"http://cdn.betrad.com/pub/");e.getElementById("_bapw-icon").src=c+"icon1.png";e.getElementById("_bapw-link").onclick=function(){var f=this;function d(i,l){var j=e.getElementsByTagName("head")[0]||e.documentElement,h=false,g=e.createElement("script");function k(){g.onload=g.onreadystatechange=null;j.removeChild(g);l()}g.src=i;g.onreadystatechange=function(){if(!h&&(this.readyState=="loaded"||this.readyState=="complete")){h=true;k()}};g.onload=k;j.insertBefore(g,j.firstChild)}this.onclick="return false";d(a+"://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js",function(){d(c+"pub1.js",function(){BAPW.i(f,{pid:46,ocid:374},false)})});return false};b=new Image();b.src=a+"://l.betrad.com/pub/p.gif?pid=46&ocid=374&ii=1&r="+Math.random()}, 20);
+</SCRIPT>
+
+<SCRIPT>
+	var beacon = new BeaconClass();
+
+	dmjs.addLoadEvent(function() {
+		new Image().src = dmjs.setting.beacon.server + '?' + $.param(beacon.getData());
+	}, 7);
+</SCRIPT>
+
+<SCRIPT>
+    if (dmjs.revenueTags.length != 0) {
+        $("<meta/>").attr("scheme", "DMINSTR2")
+            .attr("name", "ltvtag")
+            .attr("content", escape(dmjs.revenueTags.join("|")))
+            .appendTo($("head"));
+    };
+</SCRIPT>
+<!-- BEGIN dmtracker --><NOSCRIPT>&lt;img 
+src="http://vs.dmtracker.com/images/zig.gif?Log=1" alt="zig"/&gt;</NOSCRIPT>
+<SCRIPT src="How%20to%20Dynamically%20Allocate%20an%20Array%20Using%20Class%20in%20C++%20%20eHow_com_files/vs.js"></SCRIPT>
+<!-- END dmtracker -->
+<SCRIPT>
+	var _comscore = _comscore || [];
+	dmjs.global.comscore = {"c1":"2","c2":"6036385","c3":"","options":{"url_append":"comscorekw=eHow_eHow Technology and Electronics"}};
+	_comscore.push(dmjs.global.comscore);
+	(function() {
+		var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+		s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+		el.parentNode.insertBefore(s, el);
+	})();
+</SCRIPT>
+<NOSCRIPT>&lt;img 
+src="http://b.scorecardresearch.com/b?c1=2&amp;c2=6036385&amp;c3=&amp;c7=http%3A%2F%2Fwww.ehow.com%2Fhow_8601619_dynamically-array-using-class-c.html%3Fcomscorekw%3DeHow_eHow%20Technology%20and%20Electronics&amp;cv=2.0&amp;cj=1" 
+/&gt;</NOSCRIPT>
+<SCRIPT>
+		if(dmjs.maintenance.dart) {
+			dmjs.addLoadEvent(function() {
+				dartAds.renderAdElements($("[data-dartAdParams]"));
+			});
+		}
+		$(window).load(function() {
+			dmjs.fireEvents();
+		});
+	</SCRIPT>
+
+<DIV id="fb-root"></DIV></BODY></HTML>
